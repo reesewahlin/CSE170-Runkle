@@ -9,6 +9,5 @@ Team Members:
 	Jon Rothenberg
 	Nick Campbell
 
-Project:
+Project: 
 	Context-based relevant info curated individually based on user action, social media presence, and mailbox parsing.
-	
