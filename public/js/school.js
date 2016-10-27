@@ -1,3 +1,4 @@
+
 'use strict';
 
 // Call this function when the page loads (the "ready" event)
@@ -11,6 +12,7 @@ $(document).ready(function() {
 function initializePage() {
 	// add any functionality and listeners you want here
 }
+
 
 
 function initMap(position) {
@@ -30,8 +32,9 @@ function initMap(position) {
  }
 
  function getLocation() {
+ 	console.log("Getting location");
     if (navigator.geolocation) {
-        coordinates = navigator.geolocation.getCurrentPosition(initMap);
+        navigator.geolocation.getCurrentPosition(initMap);
     } else {
         console.log("Geolocation is not supported by this browser.");
     }

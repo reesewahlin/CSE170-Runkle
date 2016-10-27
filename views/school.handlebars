@@ -22,40 +22,45 @@
   			<h1>School</h1>
 		</div>
 
-<!-- EMBED MAP HERE  -->
 
-    <div class="row">
-      <div class="col-md-6">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>User</td>
-              <th>Salient need</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Schoolteacher</td>
-              <td>Wants to know what music students are listening to so he can integrate it into his lessons.</td>
-            </tr>
-            <tr>
-              <td>Student 5th grade</td>
-              <td>Desire to be seen as a tastemaker for her friends. Hears about new music from older sister in middle school.</td>
-            </tr>  
-          </tbody>          
-        </table>
-      </div>
-      <div class="col-md-6">
-        <img src="http://lorempixel.com/g/520/150/technics" alt="Lorem Pixel image" class="img">
-      </div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#schedule">Schedule</a></li>
+            <li><a data-toggle="tab" href="#nearby">Nearby</a></li>
+            <li><a data-toggle="tab" href="#map-page">Map</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div id="schedule" class="tab-pane fade in active">
+                <h3>Schedule</h3>
+                <p>Calendar goes here</p>
+            </div>
+            <div id="nearby" class="tab-pane fade">
+                <h3>Nearby</h3>
+                <p>Some cool stuff that you'll find interesting that's nearby</p>
+            </div>
+            <div id="map-page" class="tab-pane fade">
+                <h3 class="card-title">Your current location: </h3>
+                <div id="map">
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVoLbkk1X9m-tILGHPeT3fzK4txB1Y8qE&callback=getLocation">
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
     </div>
-
-		<p>Sed vitae ultricies magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pulvinar sapien eget lacus volutpat suscipit. Duis bibendum condimentum sapien, quis vulputate turpis ultricies sit amet. Quisque sollicitudin vitae ipsum vel scelerisque. Aliquam facilisis eros eros, in ultricies erat aliquam nec. Suspendisse nec egestas arcu. Sed nec malesuada turpis. Proin eu lorem sed mauris bibendum consectetur sit amet mattis arcu. Aliquam porta ligula in nulla ullamcorper, at pulvinar diam porta.</p>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/school.js"></script>
   </body>
 </html>
