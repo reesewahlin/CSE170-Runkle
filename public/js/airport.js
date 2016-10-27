@@ -31,13 +31,11 @@ function initMap(position) {
  }
 
  function getLocation() {
- 	var coordinates;
     if (navigator.geolocation) {
         coordinates = navigator.geolocation.getCurrentPosition(initMap);
     } else {
         console.log("Geolocation is not supported by this browser.");
     }
-    console.log(coordinates);
 }
 
 function showPosition(position) {

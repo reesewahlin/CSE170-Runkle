@@ -7,6 +7,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/airport.css" rel="stylesheet">
+    <script src="/js/airport.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,40 +23,13 @@
 		<div class="jumbotron">
   			<h1>Airport</h1>
 		</div>
-		<!-- API KEY: AIzaSyDVoLbkk1X9m-tILGHPeT3fzK4txB1Y8qE -->
 
-		<h3>My Google Maps Demo</h3>
+
+		<h3>Your current location: </h3>
 	    <div id="map"></div>
 		<script async defer
 	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVoLbkk1X9m-tILGHPeT3fzK4txB1Y8qE&callback=getLocation">
 	    </script>
-
-
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<!-- <script>
-console.log("tits");
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        console.log("Geolocation is not supported by this browser.");
-    }
-}
-
-function showPosition(position) {
-    var coordinates = {
-    	lat: position.coords.latitude, 
-    	long: position.coords.longitude
-    };
-
-    console.log(coordinates);
-}
-</script> -->
-
-
 
 
     <div class="row">
@@ -92,7 +66,6 @@ function showPosition(position) {
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/airport.js"></script>
 
   </body>
 </html>

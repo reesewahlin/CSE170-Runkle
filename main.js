@@ -42,6 +42,8 @@ var window = doc.defaultView;
 // Load jQuery with the simulated jsdom window.
 $ = require('jquery')(window);
 
+
+// variables for Controller files
 var index = require('./routes/index');
 var airport = require('./routes/airport');
 var school = require('./routes/school');
