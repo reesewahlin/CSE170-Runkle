@@ -1,7 +1,4 @@
 
-
-
-
 .jumbotron {
 	text-align: center;
 }
@@ -14,4 +11,15 @@
 #homepage {
 	position: relative;
 	left: 400px;
+}
+
+
+.bp-title {
+	font-size: 20px;
+	color: #7a7a7a;
+}
+
+.bp-deets {
+	font-size: 25px;
+	font-weight: bold;
 }
