@@ -10,3 +10,8 @@
     height: 400px;
     width: 100%;
 }
+
+#homepage {
+	position: relative;
+	left: 400px;
+}

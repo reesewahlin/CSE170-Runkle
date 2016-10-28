@@ -9,5 +9,8 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// add any functionality and listeners you want here	
+	// add any functionality and listeners you want here
 }
+
+
+

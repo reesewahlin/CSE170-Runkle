@@ -3,6 +3,9 @@
   <head>
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Nav Bar-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -16,10 +19,36 @@
     <![endif]-->
   </head>
   <body>
+
+  <!--navigation bar-->  
+  <nav class="nav">
+    <div class="burger">
+      <div class="burger__patty"></div>
+    </div>
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/airport" class="nav__link c-blue"><i class="fa fa-plane" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="/school" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/home" class="nav__link c-red"><i class="fa fa-home" aria-hidden="true"></i></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="/about" class="nav__link c-green"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+
 	<!-- this is a comment in HTML -->
 	<div class="container">
 		<div class="jumbotron">
   			<h1>Home</h1>
+         <a href="/" class="btn btn-primary" id ="homepage" style = "width:20%">
+          <i class="fa fa-h-square fa-lg" aria-hidden="true"></i>  Homepage</a>
 		</div>
 
 <!-- EMBED MAP HERE  -->
@@ -52,11 +81,13 @@
 
 		<p>Sed vitae ultricies magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pulvinar sapien eget lacus volutpat suscipit. Duis bibendum condimentum sapien, quis vulputate turpis ultricies sit amet. Quisque sollicitudin vitae ipsum vel scelerisque. Aliquam facilisis eros eros, in ultricies erat aliquam nec. Suspendisse nec egestas arcu. Sed nec malesuada turpis. Proin eu lorem sed mauris bibendum consectetur sit amet mattis arcu. Aliquam porta ligula in nulla ullamcorper, at pulvinar diam porta.</p>
 
-    <p><a href="index.html">Back &raquo;</a></p>
+    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <!-- Nav Script-->
+    <script src="js/vertnav.js"></script>
   </body>
 </html>
