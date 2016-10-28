@@ -14,8 +14,10 @@ function initializePage() {
 }
 
 $(function () { 
-  $("#example").popover('show');
+  $("#example").popover();
 });
+
+
 
 
 
