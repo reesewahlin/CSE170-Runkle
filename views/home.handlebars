@@ -3,7 +3,7 @@
   <head>
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <!--Nav Bar-->
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap -->
@@ -23,11 +23,37 @@
     <![endif]-->
   </head>
   <body>
+
+  <!--navigation bar-->  
+  <nav class="nav">
+    <div class="burger">
+      <div class="burger__patty"></div>
+    </div>
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/airport" class="nav__link c-blue"><i class="fa fa-plane" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="/school" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/home" class="nav__link c-red"><i class="fa fa-home" aria-hidden="true"></i></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="/about" class="nav__link c-green"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+
 	<!-- this is a comment in HTML -->
 	<div class="container">
 
 		<div class="jumbotron">
   			<h1>Home</h1>
+         <a href="/" class="btn btn-primary" id ="homepage" style = "width:20%">
+          <i class="fa fa-h-square fa-lg" aria-hidden="true"></i>  Homepage</a>
 		</div>
 
     <nav class="nav">
@@ -56,7 +82,11 @@
         </ul>
   </nav>
 
+<<<<<<< HEAD
   </div>
+=======
+    
+>>>>>>> 53f10c351dd1530492fefc4f1235a23e041e4ce9
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -64,5 +94,7 @@
         <script src="js/vertnav.js"></script>
 
     <script src="/js/bootstrap.min.js"></script>
+    <!-- Nav Script-->
+    <script src="js/vertnav.js"></script>
   </body>
 </html>
