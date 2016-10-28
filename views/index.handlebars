@@ -29,33 +29,39 @@
 
 <body>
 
-<!--navigation bar-->
-	 <body>
-	<nav class="nav">
-	  <div class="burger">
-	    <div class="burger__patty"></div>
-	  </div>
 
-	  <ul class="nav__list">
-	    <li class="nav__item">
-	      <a href="/airport" class="nav__link c-blue"><i class="fa fa-plane" aria-hidden="true"></i></a>
-	    </li>
-	    <li class="nav__item">
-	      <a href="/school" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-	      </a>
-	    </li>
-	    <li class="nav__item">
-	      <a href="/home" class="nav__link c-red"><i class="fa fa-home" aria-hidden="true"></i></i></a>
-	    </li>
-	    <li class="nav__item">
-	      <a href="/about" class="nav__link c-green"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-	    </li>
-	  </ul>
-	</nav>
 
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
+		<!--navigation bar-->
+			<nav class="nav">
+				<div class="burger">
+				    <div class="burger__patty"></div>
+				</div>
+
+				<ul class="nav__list">
+					<li class="nav__item">
+				      	<a href="/" class="nav__link c-purple"><i class="fa fa-home" aria-hidden="true"></i>
+				      	</a>
+				     </li>
+				    <li class="nav__item">
+				      	<a href="/airport" class="nav__link c-blue"><i class="fa fa-plane" aria-hidden="false"></i></a>
+				    </li>
+				    <li class="nav__item">
+				      	<a href="/school" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+				      </a>
+				    </li>
+				    <li class="nav__item">
+				      	<a href="/home" class="nav__link c-red"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></i></a>
+				    </li>
+				    <li class="nav__item">
+				      	<a href="/about" class="nav__link c-green"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+				    </li>
+				</ul>
+			</nav>
+
+
 		<div class="jumbotron">
 			<h1>CSE 170: Team Runkle – Smart Cities</h1>
 			<p>Context-based info delivered</p>
@@ -68,22 +74,22 @@
 		<!--airport card-->
 		<div class ="card" style="width: 18%">
 			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/airport.jpg" data-holder-rendered="true">
-		<div class="card-block">
-    		<h4 class="card-title"></h4>
-    		<a href="/airport" data-toggle="tooltip"  class="btn btn-primary" style = "width:100%">
-    			<i class="fa fa-plane fa-lg" aria-hidden="true"></i> Airport</a>
+			<div class="card-block">
+	    		<h4 class="card-title"></h4>
+	    		<a href="/airport" data-toggle="tooltip"  class="btn btn-primary" style = "width:100%">
+	    			<i class="fa fa-plane fa-lg" aria-hidden="true"></i> Airport</a>
 
-  		</div>
+	  		</div>
  		 </div>
 
  		 <!--school-->
  		 <div class ="card" style="width: 18%">
 			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/school.jpg" data-holder-rendered="true">
-		<div class="card-block">
-    		<h4 class="card-title"></h4>
-    		<a href="/school" class="btn btn-primary" style = "width:100%">
-    			<i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i> School</a>
-  		</div>
+			<div class="card-block">
+	    		<h4 class="card-title"></h4>
+	    		<a href="/school" class="btn btn-primary" style = "width:100%">
+	    			<i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i> School</a>
+  			</div>
  		 </div>
 
  		 <!--home-->
@@ -105,6 +111,7 @@
     			<i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> About</a> 
   		 </div>
  		</div>
+ 	</div>
 		
 
 	<script src="https://code.jquery.com/jquery.js"></script>
