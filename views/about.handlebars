@@ -3,10 +3,14 @@
   <head>
     <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nav Bar-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/airport.css" rel="stylesheet">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,6 +20,30 @@
     <![endif]-->
   </head>
   <body>
+  <!--navigation bar-->
+   
+  <nav class="nav">
+    <div class="burger">
+      <div class="burger__patty"></div>
+    </div>
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/airport" class="nav__link c-blue"><i class="fa fa-plane" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="/school" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/home" class="nav__link c-red"><i class="fa fa-home" aria-hidden="true"></i></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="/about" class="nav__link c-green"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+
 	<!-- this is a comment in HTML -->
 	<div class="container">
 		<div class="jumbotron">
@@ -58,5 +86,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <!-- Nav Script-->
+    <script src="js/vertnav.js"></script>
   </body>
 </html>

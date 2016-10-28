@@ -4067,76 +4067,76 @@ textarea.input-group-sm > .input-group-btn > .btn {
   z-index: 2;
 }
 
-.nav {
+.navi {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
 
-.nav:before,
-.nav:after {
+.navi:before,
+.navi:after {
   display: table;
   content: " ";
 }
 
-.nav:after {
+.navi:after {
   clear: both;
 }
 
-.nav:before,
-.nav:after {
+.navi:before,
+.navi:after {
   display: table;
   content: " ";
 }
 
-.nav:after {
+.navi:after {
   clear: both;
 }
 
-.nav > li {
+.navi > li {
   position: relative;
   display: block;
 }
 
-.nav > li > a {
+.navi > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+.navi > li > a:hover,
+.navi > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
-.nav > li.disabled > a {
+.navi > li.disabled > a {
   color: #999999;
 }
 
-.nav > li.disabled > a:hover,
-.nav > li.disabled > a:focus {
+.navi > li.disabled > a:hover,
+.navi > li.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   cursor: not-allowed;
   background-color: transparent;
 }
 
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
+.navi .open > a,
+.navi .open > a:hover,
+.navi .open > a:focus {
   background-color: #eeeeee;
   border-color: #428bca;
 }
 
-.nav .nav-divider {
+.navi .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 
-.nav > li > a > img {
+.navi > li > a > img {
   max-width: none;
 }
 
