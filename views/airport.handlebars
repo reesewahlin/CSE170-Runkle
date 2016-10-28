@@ -63,27 +63,42 @@
         </nav>
 
 
-        <!-- Navigation header for topics in school -->
+        <!-- Navigation header for topics in airport -->
         <ul class="navi nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#map-page">Map</a></li>
-            <li><a data-toggle="tab" href="#boarding-pass">Boarding Pass</a></li>
+            <li class="active"><a data-toggle="tab" href="#boarding-pass">Boarding Pass</a></li>
+            <li><a data-toggle="tab" href="#map-page">Map</a></li>
             <li><a data-toggle="tab" href="#id">ID</a></li>
         </ul>
 
         <!-- Control animations and content of navigation header -->
         <div class="tab-content">
-            <div id="map-page" class="tab-pane fade in active">
-                <h3 class="card-title">Your current location: </h3>
+            <div id="boarding-pass" class="tab-pane fade in active" >
+            
+                <h3 class="well">Boarding Pass</h3>
+                <div class="row">
+                    <h4 class="col-sm-4">Flight: <p>NW9030</p> </h4>
+                    <h4 class="col-sm-4">Destination:    <p>SINGAPORE</p></h4>
+                    <h4 class="col-sm-4">Passenger:    <p>Tarin Yankovich</p></h4>
+                </div>
+                </div class="row">  
+                    <h4 class="col-sm-4">Gate:   <p>A22</p></h4>
+                    <h4 class="col-sm-4">Departure:   <p>3:15PM DEC 2016</p></h4>
+                    <h4 class="col-sm-4">Class:  <p>First</p></h4>
+                </div>
+                <div>
+                    <h4 class="col-sm-4">Tracking:  <p>2 207 365 3958 3309 0</p></h4>
+                    <h4 class="col-sm-4">Barcode:  <img src="images/barcode.png"></h4>
+                </div>
+            </div>
+            <div id="map-page" class="tab-pane fade">
+                <h3 class="card-title" >Your current location: </h3>
                 <div id="map">
                     <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVoLbkk1X9m-tILGHPeT3fzK4txB1Y8qE&callback=getLocation">
                     </script>
                 </div>
             </div>
-            <div id="boarding-pass" class="tab-pane fade">
-                <h3>Boarding Pass</h3>
-                <p>Some content in menu 1.</p>
-            </div>
+
             <div id="id" class="tab-pane fade">
                 <h3>Identification Card</h3>
                 <p>Some content in menu 1.</p>
@@ -91,6 +106,11 @@
         </div>
 
 	</div>
+
+
+
+
+
 
 
 
