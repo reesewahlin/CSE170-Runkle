@@ -1,8 +1,10 @@
-
+var data = require('../data.json');
 
 
 
 
 exports.view = function(req, res){
-  res.render('airport');
+  console.log(data);
+  res.render('airport',data);
+
 };
