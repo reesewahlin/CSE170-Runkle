@@ -1,4 +1,4 @@
-var data = request("../data.json");
+//var data = require("../../data.json");
 
 var currentLocation;
 var areas = [];
@@ -68,7 +68,7 @@ function success(pos) {
 	console.log(areas);
 };
 
-
+//calculate distance between your current position and some location
 function calculateDistance(p2) {
 	var R = 6371e3; // metres
 	var lat1 = currentLocation.lat;
@@ -89,11 +89,12 @@ function calculateDistance(p2) {
 	return d;
 }
 
+//convert degrees to radians
 function toRadians(degrees) {
 	return degrees * Math.PI / 180;
 }
-<<<<<<< HEAD
 
+//navigator.geolocation.getLocation error method thrown when if fails
 function error(err) {
   	console.warn('ERROR(' + err.code + '): ' + err.message);
 };
