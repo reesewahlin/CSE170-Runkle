@@ -50,6 +50,7 @@ var school = require('./routes/school');
 var home = require('./routes/home');
 var about = require('./routes/about');
 var login = require('./routes/login');
+var homepage = require('./routes/homepage');
 
 
 
@@ -81,7 +82,8 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/', login.view);
+app.get('/homepage',homepage.view);
 app.get('/airport', airport.view);
 app.get('/school', school.view);
 app.get('/home', home.view);
