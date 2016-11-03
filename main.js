@@ -49,6 +49,7 @@ var airport = require('./routes/airport');
 var school = require('./routes/school');
 var home = require('./routes/home');
 var about = require('./routes/about');
+var login = require('./routes/login');
 
 
 
@@ -85,6 +86,7 @@ app.get('/airport', airport.view);
 app.get('/school', school.view);
 app.get('/home', home.view);
 app.get('/about', about.view);
+app.get('/login',login.view);
 // Example route
 // app.get('/users', user.list);
 
