@@ -1,0 +1,17 @@
+#container1 {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+
+#cameraButton {
+	margin-right: 200px;
+	margin-left: 280px;
+	outline: none;
+}

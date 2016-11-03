@@ -92,54 +92,18 @@ function calculateDistance(p2) {
 function toRadians(degrees) {
 	return degrees * Math.PI / 180;
 }
+<<<<<<< HEAD
 
 function error(err) {
   	console.warn('ERROR(' + err.code + '): ' + err.message);
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
 
 google.maps.event.addDomListener(window, "load", initialize);
-
-
-
-
-
-
-
 

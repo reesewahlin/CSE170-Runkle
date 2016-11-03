@@ -1,0 +1,20 @@
+{
+	 "boardingInfo": 
+ 		{
+			"flight": "DT4305",
+			"gate": "B50",
+			"tracking": "4 110 234 5667 3422 0",
+			"destination": "TANGLAD, BALI",
+			"departure": "6:00pm, JUL 02",
+			"passenger": "Calvin Gomez",
+			"class": "First"		
+		},
+
+		"login": 
+		{
+			"userName": "Calvin Gomez",
+			"password": "password1",
+			"email": "cuddlebear23@aol.com"
+		}
+}
+

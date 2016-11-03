@@ -15,7 +15,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhc8g7GgjXig6yXX4jqGOahy9zNHDPjG4&libraries=geometry,places"></script>
+    <!--Webcam-->
+    <link href="/css/camera.css" rel="stylesheet">
     <script src="/js/airport.js"></script>
+
 
 
 
@@ -82,29 +85,31 @@
             <div id="boarding-pass" class="tab-pane fade" >
             
                 <h3 class="well">Boarding Pass</h3>
+            <div id="boarding-pass" class="tab-pane fade in active" >
+                <h3 class="well">Boarding Pass for {{login.userName}}</h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
                             <h4 class="bp-title">Flight:</h4>
-                            <p class="bp-deets">NW9030</p>
+                            <p class="bp-deets">{{boardingInfo.flight}}</p>
                         </div>
                         <div class="col-sm-4">
                             <h4 class="bp-title">Destination:</h4>
-                            <p class="bp-deets">SINGAPORE</p>
+                            <p class="bp-deets">{{boardingInfo.destination}}</p>
                         </div>
                         <div class="col-sm-4">
                             <h4 class="bp-title">Passenger:</h4>
-                            <p class="bp-deets">Tarin Yankovich</p>
+                            <p class="bp-deets">{{boardingInfo.passenger}}</p>
                         </div>
                     </div>
                     <div class="row">  
                         <div class="col-sm-4">
                             <h4 class="bp-title">Gate:</h4>
-                            <p class="bp-deets">A22</p>
+                            <p class="bp-deets">{{boardingInfo.gate}}</p>
                         </div>
                         <div class="col-sm-4">
                             <h4 class="bp-title">Departure:</h4>
-                            <p class="bp-deets">3:15pm DEC 2016</p>
+                            <p class="bp-deets">{{boardingInfo.departure}}</p>
                         </div>
                         <div class="col-sm-4">
                             <h4 class="bp-title">Class:</h4>
@@ -114,7 +119,8 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <h4 class="bp-title">Tracking:</h4>
-                            <p class="bp-deets">2 207 365 3958 3309 0</p>
+                            <p class="bp-deets">{{boardingInfo.tracking
+                            }}</p>
                         </div>
                         <div class="col-sm-4">
                             <h4 class="bp-title">Barcode:</h4>
@@ -125,25 +131,24 @@
                 </div>
             </div>
             <div id="id" class="tab-pane fade">
-                <h3>Identification Card</h3>
-                <p>Some content in menu 1.</p>
+                <h3>Capture your ID with your webcam</h3>
+                <div id="container1">
+                <video autoplay="true" id="videoElement"></video>
+                 <button class="btn btn-primary popup" onclick="myFunction()" id="cameraButton">Capture Photo
+                 <span class="popuptext" id="myPopup">click!</span></button>
+                </div>                
             </div>
 
         </div>
-
 	</div>
-
-
-
-
-
-
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
      <!-- Nav Script-->
     <script src="js/vertnav.js"></script>
+    <!--Webcam Script-->
+    <script src="js/camera.js"></script>
 
 
 
