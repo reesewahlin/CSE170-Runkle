@@ -1,38 +1,145 @@
-'use strict';
+var data = request("../data.json");
 
-// Call this function when the page loads (the "ready" event)
-$(document).ready(function() {
-	initializePage();
-})
+var currentLocation;
+var areas = [];
+//specify options for querying navigator.GeoLocation for location
+var options = {
+  	enableHighAccuracy: true,
+  	timeout: 10000,
+  	maximumAge: 0
+};
 
-/*
- * Function that is called when the document is ready.
- */
-function initializePage() {
-	// add any functionality and listeners you want here
+
+
+
+//first function called when page renders
+function initialize() {
+	navigator.geolocation.getCurrentPosition(success, error, options);
+};
+
+
+//when navigator.Geolocation works, this is called
+function success(pos) {
+	currentLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+
+	//map connection to HTML
+	var resultsMap = new google.maps.Map(
+	    document.getElementById("map_canvas"), {
+		    center: currentLocation,
+		    zoom: 13,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+	    });
+
+	//define requests for finding locations of nearests areas
+	var requestAirport = {
+	    location: currentLocation,
+	    radius: '500',
+	    query: 'airport'
+	};
+	var requestSchool = {
+	    location: currentLocation,
+	    radius: '500',
+	    query: 'university'
+	};
+    console.log("Current Location: "+currentLocation);
+
+	//find closest instance of areas (AP, School)
+	var service = new google.maps.places.PlacesService(resultsMap);
+	service.textSearch(requestAirport, callback);
+	service.textSearch(requestSchool, callback);
+
+	//save each instance of the nearest location to areas array
+	function callback(results, status) {
+	    if (status == google.maps.places.PlacesServiceStatus.OK) {
+		     var area = {
+		     	"name": results[0].name,
+		     	"place_id": results[0].place_id,
+		     	"location": {
+		     		lat: results[0].geometry.location.lat(),
+		     		lng: results[0].geometry.location.lng()
+		     	},
+		     	"distance": 999
+		     } 
+		     area.distance = calculateDistance(area.location);
+		     areas.push( area );
+	    }
+	}
+
+	console.log(areas);
+};
+
+
+function calculateDistance(p2) {
+	var R = 6371e3; // metres
+	var lat1 = currentLocation.lat;
+	var lat2 = p2.lat;
+	var lon1 = currentLocation.lng;
+	var lon2 = p2.lng;
+	var φ1 = toRadians(lat1);
+	var φ2 = toRadians(lat2);
+	var Δφ = toRadians((lat2-lat1));
+	var Δλ = toRadians((lon2-lon1));
+
+	var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+	        Math.cos(φ1) * Math.cos(φ2) *
+	        Math.sin(Δλ/2) * Math.sin(Δλ/2);
+	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+	var d = R * c;
+	return d;
 }
 
-
-function initMap(position) {
-    var coordinates = {
-    	lat: position.coords.latitude, 
-    	lng: position.coords.longitude
-    };
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-      	zoom: 15,
-      	center: coordinates
-    });
-    var marker = new google.maps.Marker({
-      	position: coordinates,
-      	map: map
-    });
- }
-
- function getLocation() {
-    if (navigator.geolocation) {
-        coordinates = navigator.geolocation.getCurrentPosition(initMap);
-    } else {
-        console.log("Geolocation is not supported by this browser.");
-    }
+function toRadians(degrees) {
+	return degrees * Math.PI / 180;
 }
+
+function error(err) {
+  	console.warn('ERROR(' + err.code + '): ' + err.message);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+google.maps.event.addDomListener(window, "load", initialize);
+
+
+
+
+
+
+
+

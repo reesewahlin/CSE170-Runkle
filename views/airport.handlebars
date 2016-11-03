@@ -12,6 +12,9 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <link href="/css/airport.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhc8g7GgjXig6yXX4jqGOahy9zNHDPjG4&libraries=geometry,places"></script>
     <script src="/js/airport.js"></script>
 
 
@@ -65,14 +68,18 @@
 
         <!-- Navigation header for topics in airport -->
         <ul class="navi nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#boarding-pass">Boarding Pass</a></li>
-            <li><a data-toggle="tab" href="#map-page">Map</a></li>
+            <li class="active"><a data-toggle="tab" href="#map-page">Map</a></li>
+            <li><a data-toggle="tab" href="#boarding-pass">Boarding Pass</a></li>
             <li><a data-toggle="tab" href="#id">ID</a></li>
         </ul>
 
         <!-- Control animations and content of navigation header -->
         <div class="tab-content">
-            <div id="boarding-pass" class="tab-pane fade in active" >
+            <div id="map-page" class="tab-pane fade in active">
+                <h3 class="card-title" >Your current location: </h3>
+                    <div id="map_canvas" style="width:750px; height:450px; border: 2px solid #3872ac;"></div>
+            </div>
+            <div id="boarding-pass" class="tab-pane fade" >
             
                 <h3 class="well">Boarding Pass</h3>
                 <div class="container">
@@ -116,21 +123,12 @@
                     </div>
 
                 </div>
-
             </div>
-            <div id="map-page" class="tab-pane fade">
-                <h3 class="card-title" >Your current location: </h3>
-                <div id="map">
-                    <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVoLbkk1X9m-tILGHPeT3fzK4txB1Y8qE&callback=getLocation">
-                    </script>
-                </div>
-            </div>
-
             <div id="id" class="tab-pane fade">
                 <h3>Identification Card</h3>
                 <p>Some content in menu 1.</p>
             </div>
+
         </div>
 
 	</div>
@@ -142,12 +140,11 @@
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
      <!-- Nav Script-->
     <script src="js/vertnav.js"></script>
+
 
 
   </body>
