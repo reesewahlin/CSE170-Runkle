@@ -23,6 +23,7 @@
 
 
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -127,15 +128,15 @@
                 </div>
             </div>
             <div id="id" class="tab-pane fade">
-                <h3>Capture your ID with your webcam</h3>
-                <div id="container1">
+             <div class= "container">
+                <h3 id = "noCurrentID">No current ID</h3>
+                <i class="fa fa-id-card-o fa-5x" id ="iconID" aria-hidden="true"></i>
                 <video autoplay="true" id="videoElement"></video>
-                 <button class="btn btn-primary popup" onclick="myFunction()" id="cameraButton">Capture Photo
+                 <button class="btn btn-primary popup" onclick="myFunction()" id="cameraButton">Click here to capture photo of ID
                  <span class="popuptext" id="myPopup">click!</span></button>
                 </div>                
             </div>
-
-        </div>
+            </div>
 	</div>
 
 
@@ -145,6 +146,7 @@
     <script src="js/vertnav.js"></script>
     <!--Webcam Script-->
     <script src="js/camera.js"></script>
+    <script src="https://use.fontawesome.com/4e6157d83b.js"></script>
 
 
 

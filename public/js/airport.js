@@ -119,7 +119,12 @@ function error(err) {
 function myFunction() {
     var popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
+    $('#videoElement').show();
+    $('#cameraButton').text("Photo Taken!");
+    $('#noCurrentID').hide();
+    $('#iconID').hide();
 }
 
 google.maps.event.addDomListener(window, "load", initialize);
 
+$
