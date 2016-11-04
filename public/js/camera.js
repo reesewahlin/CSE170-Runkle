@@ -14,13 +14,13 @@ function videoError(e) {
     // do something
 }
 
-$(cameraButton).click.dialog({
-    autoOpen: false,
-    show: 'slide',
-    resizable: false,
-    position: 'center',
-    stack: true,
-    height: 'auto',
-    width: 'auto',
-    modal: true
-});
+// $(cameraButton).click.dialog({
+//     autoOpen: false,
+//     show: 'slide',
+//     resizable: false,
+//     position: 'center',
+//     stack: true,
+//     height: 'auto',
+//     width: 'auto',
+//     modal: true
+// });

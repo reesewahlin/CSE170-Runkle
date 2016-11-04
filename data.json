@@ -26,10 +26,7 @@
 						"img": "airport.jpg",
 						"href": "airport",
 						"favicon": "fa fa-plane fa-lg"
-					},
-					"place_name": "Montgomery-Gibbs Executive Airport",
-					"place_id": "ChIJQ-oBCGBT2YARwYDNvIwTjHI",
-					"distance": 381.5196261147598
+					}
 				},
 			"close":
 				{
@@ -55,6 +52,23 @@
 					"place_id": "ChIJTasMQcQG3IafgasGDfyqtu8",
 					"distance": 113596.2138947
 				}
+
+		},
+
+	"airport": 
+		{
+			"nearest": {
+				"place_name": "Montgomery-Gibbs Executive Airport",
+				"place_id": "ChIJQ-oBCGBT2YARwYDNvIwTjHI",
+				"location": 
+					{
+						"lat": 32.8127254,
+						"lng": -117.14141239999998
+					},
+				"distance": 381.5196261147598
+			}
 		}
+
+
 }
 

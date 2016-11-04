@@ -1,41 +1,62 @@
+//var data = require("../../data.json")
 
-'use strict';
 
-// Call this function when the page loads (the "ready" event)
-$(document).ready(function() {
-	initializePage();
-})
-
-/*
- * Function that is called when the document is ready.
- */
-function initializePage() {
-	// add any functionality and listeners you want here
-}
+var currentLocation;
+//specify options for querying navigator.GeoLocation for location
+var options = {
+    enableHighAccuracy: true,
+    timeout: 10000,
+    maximumAge: 0
+};
 
 
 
-function initMap(position) {
-    var coordinates = {
-    	lat: position.coords.latitude, 
-    	lng: position.coords.longitude
-    };
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      	zoom: 15,
-      	center: coordinates
+//first function called when page renders
+function initialize() {
+  navigator.geolocation.getCurrentPosition(success, error, options);
+};
+
+
+//when navigator.Geolocation works, this is called
+function success(pos) {
+  currentLocation = { lat: pos.coords.latitude, 
+                      lng: pos.coords.longitude };
+
+  //map connection to HTML
+  var resultsMap = new google.maps.Map(
+      document.getElementById("map_canvas"), {
+        center: currentLocation,
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+
+  var marker = new google.maps.Marker({
+          position: currentLocation,
+          map: resultsMap,
+          title: 'You!'
     });
-    var marker = new google.maps.Marker({
-      	position: coordinates,
-      	map: map
-    });
- }
 
- function getLocation() {
- 	console.log("Getting location");
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(initMap);
-    } else {
-        console.log("Geolocation is not supported by this browser.");
-    }
-}
+  //define requests for finding locations of nearests areas
+  var requestAirport = {
+      location: currentLocation,
+      radius: '500',
+      query: 'airport'
+  };
+  var requestSchool = {
+      location: currentLocation,
+      radius: '500',
+      query: 'university'
+  };
+    console.log("Current Location: "+currentLocation);
+
+};
+
+//navigator.geolocation.getLocation error method thrown when if fails
+function error(err) {
+    console.warn('ERROR(' + err.code + '): ' + err.message);
+};
+
+
+google.maps.event.addDomListener(window, "load", initialize);
+

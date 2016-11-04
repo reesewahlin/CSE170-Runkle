@@ -69,6 +69,9 @@
             </ul>
         </nav>
 
+        <h2>Welcome to {{airport.nearest.place_name}}</h2>
+        <p style="margin-bottom: 30px">In the tabs below is all the relevant information you need during your travels. Enjoy!</p>
+
 
         <!-- Navigation header for topics in airport -->
         <ul class="navi nav-tabs">
@@ -80,10 +83,10 @@
         <!-- Control animations and content of navigation header -->
         <div class="tab-content">
             <div id="map-page" class="tab-pane fade in active">
-                <h3 class="card-title" >Your current location: </h3>
+                <h3 class="card-title" >Your current location: (just pretend for the purpose of your task) </h3>
                     <div id="map_canvas" style="width:750px; height:450px; border: 2px solid #3872ac;"></div>
             </div>
-            <div id="boarding-pass" class="tab-pane fade" >
+            <div id="boarding-pass" class="tab-pane fade" style="margin-bottom: 40px" >
                 <h3 class="well">Boarding Pass for {{login.userName}}</h3>
                 <div class="container">
                     <div class="row">
@@ -124,18 +127,25 @@
                             <img src="images/barcode.png">
                         </div>
                     </div>
-
                 </div>
             </div>
             <div id="id" class="tab-pane fade">
              <div class= "container">
-                <h3 id = "noCurrentID">No current ID</h3>
-                <i class="fa fa-id-card-o fa-5x" id ="iconID" aria-hidden="true"></i>
+                <h3 id = "noCurrentID">No current ID!   Please grant camera permissions to your browser so you can add a photo of your ID </h3>
+                <!-- <i class="fa fa-id-card-o fa-5x" id ="iconID" aria-hidden="true"></i> -->
                 <video autoplay="true" id="videoElement"></video>
-                 <button class="btn btn-primary popup" onclick="myFunction()" id="cameraButton">Click here to capture photo of ID
-                 <span class="popuptext" id="myPopup">click!</span></button>
-                </div>                
+                <button class="btn btn-primary popup" onclick="addID()" id="cameraButton">
+                    Click here to capture photo of ID <span class="popuptext" id="myPopup">click!</span>
+                </button>
+                </div>  
+                <button class="btn btn-primary" id="takePhoto" style="display: none;" onclick="showID()">
+                    Take Photo! 
+                </button>  
+                <div>
+                    <img id="photoID" src="../images/idcard.jpg" style="display: none;">
+                </div>            
             </div>
+
             </div>
 	</div>
 

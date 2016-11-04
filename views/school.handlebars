@@ -12,6 +12,10 @@
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
      <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/school.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhc8g7GgjXig6yXX4jqGOahy9zNHDPjG4&libraries=geometry,places"></script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="js/school.js" ></script>
   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -74,10 +78,8 @@
             </div>
             <div id="map-page" class="tab-pane fade">
                 <h3 class="card-title">Your current location: </h3>
-                <div id="map">
-                    <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVoLbkk1X9m-tILGHPeT3fzK4txB1Y8qE&callback=getLocation">
-                    </script>
+                    <div id="map_canvas" style="width:750px; height:450px; border: 2px solid #3872ac;"></div>
+
                 </div>
             </div>
         </div>

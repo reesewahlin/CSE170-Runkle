@@ -39,6 +39,15 @@
     cursor: pointer;
 }
 
+#takePhoto {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 25%;
+}
+
 /* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;

@@ -21,7 +21,8 @@ function initialize() {
 
 //when navigator.Geolocation works, this is called
 function success(pos) {
-	currentLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+	currentLocation = { lat: 32.8127254/*pos.coords.latitude*/, 
+						lng: -117.14141239999998/*pos.coords.longitude*/ };
 
 	//map connection to HTML
 	var resultsMap = new google.maps.Map(
@@ -30,6 +31,12 @@ function success(pos) {
 		    zoom: 13,
 		    mapTypeId: google.maps.MapTypeId.ROADMAP
 	    });
+
+	var marker = new google.maps.Marker({
+          position: currentLocation,
+          map: resultsMap,
+          title: 'You!'
+    });
 
 	//define requests for finding locations of nearests areas
 	var requestAirport = {
@@ -116,15 +123,22 @@ function error(err) {
 
 
 // When the user clicks on <div>, open the popup
-function myFunction() {
+function addID() {
     var popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
     $('#videoElement').show();
-    $('#cameraButton').text("Photo Taken!");
+    $('#cameraButton').hide();/*text("Photo Taken!");*/
     $('#noCurrentID').hide();
     $('#iconID').hide();
+    $('#takePhoto').show();
+}
+
+function showID() {
+	$('#takePhoto').hide();
+	$('#videoElement').hide();
+    $('#photoID').show();
+
 }
 
 google.maps.event.addDomListener(window, "load", initialize);
 
-$
