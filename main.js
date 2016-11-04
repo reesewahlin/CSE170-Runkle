@@ -6,25 +6,6 @@
 
 // ***/
 
-// var express = require('express');
-// var app = express();
-// var hello = require('./routes/homepage');
-
-
-
-//  	return all pages in the static directory when
-// 	requested at '/' directory.
-// 	e.g., http://localhost:3000/index.html
-// 	maps to /static/index.html on this machine
-
-// app.use(express.static(__dirname + '/static'));
-
-// app.listen(3000, function () {
-//   console.log('App listening on port 3000');
-// });
-
-
-
 /**
  * Module dependencies.
  */
@@ -51,6 +32,7 @@ var home = require('./routes/home');
 var about = require('./routes/about');
 var login = require('./routes/login');
 var homepage = require('./routes/homepage');
+//var php = require('./routes/php');
 
 
 
@@ -88,6 +70,7 @@ app.get('/airport', airport.view);
 app.get('/school', school.view);
 app.get('/home', home.view);
 app.get('/about', about.view);
+//app.get('/json_save.php', php.execute);
 
 // Example route
 // app.get('/users', user.list);

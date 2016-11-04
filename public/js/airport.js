@@ -1,4 +1,10 @@
 //var data = require("../../data.json");
+var jsonfile = require('jsonfile')
+var file = '/tmp/data.json'
+jsonfile.readFile(file, function(err, obj) {
+  console.dir(obj)
+})
+
 
 var currentLocation;
 var areas = [];
@@ -66,6 +72,20 @@ function success(pos) {
 	}
 
 	console.log(areas);
+
+	$.ajax
+    ({
+        type: "GET",
+        dataType : 'json',
+        async: false,
+        url: 'http://localhost:3000/save_json.php',		//WARY... may have to change to local file
+        data: { data: JSON.stringify(areas) },
+        success: function () {alert("Thanks!"); },
+        failure: function() {alert("Error!");}
+    });
+
+
+
 };
 
 //calculate distance between your current position and some location
