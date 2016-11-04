@@ -17,6 +17,13 @@
     <link href="/css/slider.css" rel="stylesheet">
     <link href="/css/card.css" rel="stylesheet">
 
+<!-- Custom Theme files -->
+<link href="css/weatherstyle.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+<!-- //web font -->
 
 
 
@@ -67,24 +74,27 @@
 
 <!--appliance toggles-->
 <div class = "container">
-     <h4 class="card-title">Care to turn on/off some appliances?</h4>
+     <h1 class="card-title">Care to turn on/off some appliances?</h1>
     <div class ="card" style="width: 1/4">         
         <div class="card-block">
         <div class ="card-center">
             </br>
               <p>Hall Light</p>
+              <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
                 </label>
                 <hr>
               <p>Bedside Light</p>
+              <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
                 </label>
                 <hr>
                <p>Kitchen Light</p>
+               <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
@@ -98,18 +108,21 @@
         <div class ="card-center">
             </br>
               <p>Television</p>
+              <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
                 </label>
                 <hr>
               <p>Music System</p>
+              <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
                 </label>
                 <hr>
                <p>Turntable</p>
+               <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
@@ -123,18 +136,21 @@
         <div class ="card-center">
             </br>
               <p>Oven</p>
+              <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
                 </label>
                 <hr>
               <p>Stove</p>
+              <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
                 </label>
                 <hr>
                <p>Coffee Maker</p>
+               <br>
                <label class="switch">
                 <input type="checkbox">
                 <div class="slider round"></div>
@@ -144,6 +160,70 @@
             </div>
         </div>
     </div>
+
+    <!--weather-->
+    <div class = "container">
+    <h1>Set thermostat based on weather</h1>
+    <div class ="card" style="width: 1/4">         
+        <div class="card-block">
+        <div class ="card-center">
+            </br>
+              <p>60°</p>
+              <br>
+               <label class="switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+                </label>
+                <hr>
+              <p>65°</p>
+              <br>
+               <label class="switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+                </label>
+                <hr>
+               <p>70°</p>
+               <br>
+               <label class="switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+                </label>
+                <hr>
+                </div>
+            </div>
+      </div>
+
+    <!-- main -->
+  <div class="main-agileits">
+    <div class="main-wthree-row"> 
+      <div class="agileinfo-text"> 
+        <div class="date">
+          <!-- Date-JavaScript -->
+          <script type="text/javascript">
+            var mydate=new Date()
+            var year=mydate.getYear()
+            if(year<1000)
+            year+=1900
+            var day=mydate.getDay()
+            var month=mydate.getMonth()
+            var daym=mydate.getDate()
+            if(daym<10)
+            daym="0"+daym
+            var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+            var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+            document.write(""+dayarray[day]+" <br> "+daym+"  "+montharray[month]+"  "+year+"")
+          </script>
+          <!-- //Date-JavaScript -->
+        </div>
+        <h2>70<span>°</span></h2>
+        <h4>San Diego</h4>
+        <h6>Sunny</h6> 
+      </div>
+      </div>
+    </div>  
+  </div>
+  </div>
+  <!-- //main -->
 
        
            
