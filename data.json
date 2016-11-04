@@ -1,5 +1,5 @@
 {
-	 "boardingInfo": 
+	"boardingInfo": 
  		{
 			"flight": "DT4305",
 			"gate": "B50",
@@ -10,11 +10,51 @@
 			"class": "First"		
 		},
 
-		"login": 
+	"login": 
 		{
 			"userName": "Calvin Gomez",
 			"password": "password1",
 			"email": "cuddlebear23@aol.com"
+		},
+
+	"context":
+		{
+			"closest": 
+				{
+					"area_name": "airport",
+					"card": {
+						"img": "airport.jpg",
+						"href": "airport",
+						"favicon": "fa fa-plane fa-lg"
+					},
+					"place_name": "Montgomery-Gibbs Executive Airport",
+					"place_id": "ChIJQ-oBCGBT2YARwYDNvIwTjHI",
+					"distance": 381.5196261147598
+				},
+			"close":
+				{
+					"area_name": "school",
+					"card": {
+						"img": "school.jpg",
+						"href": "school",
+						"favicon": "fa fa-graduation-cap fa-lg"
+					},
+					"place_name": "University of California, San Diego",
+					"place_id": "ChIJT69MQcQG3IARpz6Rifyqtu8",
+					"distance": 11776.607660414691
+				},
+			"closeish":
+							{
+					"area_name": "home",
+					"card": {
+						"img": "home.png",
+						"href": "home",
+						"favicon": "fa fa-info-circle fa-lg"
+					},
+					"place_name": "Gomez Residence",
+					"place_id": "ChIJTasMQcQG3IafgasGDfyqtu8",
+					"distance": 113596.2138947
+				}
 		}
 }
 

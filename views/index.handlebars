@@ -63,16 +63,47 @@
 
 
 		<div class="jumbotron">
-			<h1>Hello, {{username}}</h1>
+			<h1>Hello, {{login.userName}}</h1>
 			<p>Context-based info delivered</p>
 		</div>
 
 	
 
-		<h4>Where are you?</h4>
+		<h4>Closest areas to you:</h4>
 
-		<!--airport card-->
-		<div class ="card" style="width: 20%">
+
+ 		 <!--school-->
+ 		 <div class ="card" style="width: 20%">
+			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/{{context.closest.card.img}}" data-holder-rendered="true">
+			<div class="card-block">
+	    		<h4 class="card-title"></h4>
+	    		<a href="/{{context.closest.card.href}}" class="btn btn-primary" style = "width:100%">
+	    			<i class="{{context.closest.card.favicon}}" aria-hidden="true"></i> {{context.closest.area_name}}</a>
+  			</div>
+ 		 </div>
+
+ 		  		 <!--school-->
+ 		 <div class ="card" style="width: 20%">
+			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/{{context.close.card.img}}" data-holder-rendered="true">
+			<div class="card-block">
+	    		<h4 class="card-title"></h4>
+	    		<a href="/{{context.close.card.href}}" class="btn btn-primary" style = "width:100%">
+	    			<i class="{{context.close.card.favicon}}" aria-hidden="true"></i> {{context.close.area_name}}</a>
+  			</div>
+ 		 </div>
+
+ 		  		 <!--school-->
+ 		 <div class ="card" style="width: 20%">
+			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/{{context.closeish.card.img}}" data-holder-rendered="true">
+			<div class="card-block">
+	    		<h4 class="card-title"></h4>
+	    		<a href="/{{context.closeish.card.href}}" class="btn btn-primary" style = "width:100%">
+	    			<i class="{{context.closeish.card.favicon}}" aria-hidden="true"></i> {{context.closeish.area_name}}</a>
+  			</div>
+ 		 </div>
+
+ 		 		<!--airport card-->
+<!-- 		<div class ="card" style="width: 20%">
 			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/airport.jpg" data-holder-rendered="true">
 			<div class="card-block">
 	    		<h4 class="card-title"></h4>
@@ -80,27 +111,18 @@
 	    			<i class="fa fa-plane fa-lg" aria-hidden="true"></i> Airport</a>
 
 	  		</div>
-	  	</div>
+	  	</div> -->
 
- 		 <!--school-->
- 		 <div class ="card" style="width: 20%">
-			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/school.jpg" data-holder-rendered="true">
-			<div class="card-block">
-	    		<h4 class="card-title"></h4>
-	    		<a href="/school" class="btn btn-primary" style = "width:100%">
-	    			<i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i> School</a>
-  			</div>
- 		 </div>
 
  		 <!--home-->
- 		 <div class ="card" style="width: 20%">
+<!--  		 <div class ="card" style="width: 20%">
 			<img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/home.png" data-holder-rendered="true">
 			<div class="card-block">
 	    		<h4 class="card-title"></h4>
 	    		<a href="/home" class="btn btn-primary" style = "width:100%">
 	    			<i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
 	  		</div>
- 		 </div>
+ 		 </div> -->
 
 	 		  <!--about-->
  		 <div class ="card" style="width: 20%">
