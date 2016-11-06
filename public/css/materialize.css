@@ -5249,6 +5249,7 @@ button.btn-floating {
   z-index: 1;
   will-change: opacity, transform;
   transition: .3s ease-out;
+
 }
 
 .waves-effect .waves-ripple {
@@ -5267,6 +5268,7 @@ button.btn-floating {
   -webkit-transform: scale(0);
           transform: scale(0);
   pointer-events: none;
+  text-decoration: none !important;
 }
 
 .waves-effect.waves-light .waves-ripple {

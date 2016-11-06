@@ -3,21 +3,17 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+  slideFromSide();
 })
 
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
+
   var options = [
     {selector: '#scrolly', offset: 450, callback: function(el) {
       Materialize.toast("Choose a card to begin", 2500, 'rounded');
-    } }
-  ];
-   var side_enter = [
-    {selector: '#row1', offset: 20, callback: function(el) {
-    	$('#card_school').show();
-    	$('#card_school').addClass('animated slideInLeft');
     } }
   ];
    var side_enter1 = [
@@ -33,14 +29,18 @@ function initializePage() {
     } }
   ];
   Materialize.scrollFire(options);
-  Materialize.scrollFire(side_enter);
   Materialize.scrollFire(side_enter1);
   Materialize.scrollFire(side_enter2);
   $('.parallax').parallax();
-
-   
 }
 
+function slideFromSide() {
+
+  $('#card_school').show();
+  $('#card_school').addClass('animated slideInLeft');
+}
+
+setTimeout(slideFromSide,7000);
 
 
 
