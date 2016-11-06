@@ -12,7 +12,8 @@
 
 .jumbotron {
 	position: relative;
-	background: none;
+	background-color: none;
+
 }
 
 .jumbotron:after {
@@ -39,6 +40,13 @@
      height: 200px;
      margin-bottom: 5px;
 }
+
+a.focus {
+     text-decoration: none;
+}
+
+
+
 
 
 
