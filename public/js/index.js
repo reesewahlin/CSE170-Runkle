@@ -9,13 +9,12 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// add any functionality and listeners you want here
+	  Materialize.toast('Click a card to begin', 3000,'rounded');// add any functionality and listeners you want here
 
 }
 
-$(function () { 
-  $("#example").popover();
-});
+
+
 
 
 
