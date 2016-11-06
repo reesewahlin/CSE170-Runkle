@@ -10,12 +10,35 @@ $(document).ready(function() {
  */
 function initializePage() {
   var options = [
-    {selector: '#scrolly', offset: 200, callback: function(el) {
-      Materialize.toast("Choose a card to begin", 2500, 'rounded' );
+    {selector: '#scrolly', offset: 450, callback: function(el) {
+      Materialize.toast("Choose a card to begin", 2500, 'rounded');
+    } }
+  ];
+   var side_enter = [
+    {selector: '#row1', offset: 50, callback: function(el) {
+    	$('#card_school').show();
+    	$('#card_school').addClass('animated slideInLeft');
+    } }
+  ];
+   var side_enter1 = [
+    {selector: '#row2', offset: 20, callback: function(el) {
+    	$('#card_home').show();
+    	$('#card_home').addClass('animated slideInLeft');
+    } }
+  ];
+   var side_enter2 = [
+    {selector: '#row3', offset: 20, callback: function(el) {
+    	$('#card_about').show();
+    	$('#card_about').addClass('animated slideInLeft');
     } }
   ];
   Materialize.scrollFire(options);
+  Materialize.scrollFire(side_enter);
+  Materialize.scrollFire(side_enter1);
+  Materialize.scrollFire(side_enter2);
   $('.parallax').parallax();
+
+   
 }
 
 
