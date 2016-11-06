@@ -9,8 +9,13 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	  Materialize.toast('Click a card to begin', 3000,'rounded');// add any functionality and listeners you want here
-
+  var options = [
+    {selector: '#scrolly', offset: 200, callback: function(el) {
+      Materialize.toast("Choose a card to begin", 2500, 'rounded' );
+    } }
+  ];
+  Materialize.scrollFire(options);
+  $('.parallax').parallax();
 }
 
 
