@@ -6,98 +6,85 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/login.css">
+ 
   <!-- Bootstrap -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  
   <link href="/css/bootstrap.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.css" rel="stylesheet">
 
-  
+        <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+     
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="css/materialize.css">
+
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  
-<!-- Mixins-->
-<!-- Pen Title-->
-<div class="pen-title">
-  <h1>Welcome to Runkles House</h1>
-</div>
-<div class="container">
-  <div class="card"></div>
-  <div class="card">
-    <h1 class="title">Login</h1>
-    <form>
-      <div class="input-container">
-        <input type="text" id="Username" required="required"/>
-        <label for="Username">Username</label>
-        <div class="bar"></div>
-      </div>
-      <div class="input-container">
-        <input type="password" id="Password" required="required"/>
-        <label for="Password">Password</label>
-        <div class="bar"></div>
-      </div>
-      <div class="button-container">
-        <a href="/homepage"><span>Go</span></a>
-      </div>
-      <div class="footer"><a data-toggle="modal" data-target="#myModal" href="#">Forgot your password?</a></div>
-    </form>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+<!--header-->
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper cyan darken-2">
+      <a class="brand-logo center animated fadeIn" style="font-weight: 200"><i class="material-icons animated slideInLeft">navigation</i>Info Hub</a>
+    </div>
+  </nav>
+  </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Looks like you forgot your password...</h4>
+  <div class="outer_Bounds blue-grey lighten-4">
+
+    <div class="container">
+
+<div class ="animated fadeInDown" id="vert_align">
+
+   <div class="row">
+   <form class="col s12">
+      <div class="col s12 m5 card-panel grey darken-3">
+       <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate white-text">
+          <label for="first_name" class="white-text" id="first_input">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate white-text">
+          <label for="last_name" class="white-text" id="last_input">Last Name</label>
+        </div>
+
+        <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate white-text">
+          <label for="email" class="white-text" id="email_input">Email</label>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate white-text">
+          <label for="password" class="white-text" id="password_input">Password</label>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>That sucks! I hear UCSD has some cool classes on memorization.</p>
+
+       <div class="row center-align">
+       <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" type="submit" action="/homepage" method="get" name="action">Submit
+       <i class="material-icons right">send</i>
+       </button>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
       </div>
     </div>
-
-  </div>
+  </form>
 </div>
-
-
-  </div>
-  <div class="card alt">
-    <div class="toggle"></div>
-    <h1 class="title">Register
-      <div class="close"></div>
-    </h1>
-    <form>
-      <div class="input-container">
-        <input type="text" id="Username" required="required"/>
-        <label for="Username">Username</label>
-        <div class="bar"></div>
-      </div>
-      <div class="input-container">
-        <input type="password" id="Password" required="required"/>
-        <label for="Password">Password</label>
-        <div class="bar"></div>
-      </div>
-      <div class="input-container">
-        <input type="password" id="Repeat Password" required="required"/>
-        <label for="Repeat Password">Repeat Password</label>
-        <div class="bar"></div>
-      </div>
-      <div class="button-container">
-        <a href="/"><span>Next</span></a>
-      </div>
-    </form>
-  </div>
 </div>
-
+</div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="js/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   
 
 </body>

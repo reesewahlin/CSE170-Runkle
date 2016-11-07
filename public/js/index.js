@@ -3,7 +3,6 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
-  slideFromSide();
 })
 
 /*
@@ -34,13 +33,6 @@ function initializePage() {
   $('.parallax').parallax();
 }
 
-function slideFromSide() {
-
-  $('#card_school').show();
-  $('#card_school').addClass('animated slideInLeft');
-}
-
-setTimeout(slideFromSide,7000);
 
 
 

@@ -45,6 +45,9 @@ a.focus {
      text-decoration: none;
 }
 
+#card_school {
+     -webkit-animation-delay: 0.15s;
+}
 
 
 
