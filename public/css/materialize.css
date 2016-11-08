@@ -2701,6 +2701,7 @@ video.responsive-video {
 @media only screen and (max-width: 992px) {
   .pagination {
     width: 100%;
+
   }
   .pagination li.prev,
   .pagination li.next {
@@ -3362,7 +3363,7 @@ input[type=range] + .thumb {
   max-width: 1280px;
   width: 90%;
   margin-top: -135px;
-  height:750px;
+  height:746px;
 
   
 
@@ -4644,7 +4645,7 @@ small {
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
   color: #ffab40;
-  margin-right: 20px;
+  
   transition: color .3s ease;
   text-transform: uppercase;
 }
@@ -5385,16 +5386,13 @@ button.btn-floating {
 
 @media only screen and (max-width: 992px) {
   .modal {
-    width: 80%;
+    width: 98%;
+    bottom: 60px;
   }
 }
 
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
-}
-
-.modal .modal-content {
-  padding: 24px;
 }
 
 .modal .modal-close {
@@ -5643,6 +5641,7 @@ button.btn-floating {
   cursor: zoom-in;
   position: relative;
   transition: opacity .4s;
+
 }
 
 .materialboxed:hover {
@@ -5656,7 +5655,8 @@ button.btn-floating {
 .materialboxed.active {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
-}
+
+ }
 
 #materialbox-overlay {
   position: fixed;
@@ -5664,7 +5664,6 @@ button.btn-floating {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #292929;
   z-index: 1000;
   will-change: opacity;
 }
@@ -8564,3 +8563,4 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
+

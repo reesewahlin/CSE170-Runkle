@@ -1,0 +1,27 @@
+#button_row {
+
+	text-align: center;
+
+}
+
+#space_button {
+	padding-left: 15px;
+}
+
+#buttonslow {
+	-webkit-animation-delay: .10s;
+}
+
+#buttonslow2 {
+	-webkit-animation-delay: .20s;
+}
+
+#button_row {
+	position: fixed;
+	left:-50px;
+	right: 23px;
+  	bottom: 23px;
+  	padding-top: 15px;
+  	margin-bottom: 0;
+}
+

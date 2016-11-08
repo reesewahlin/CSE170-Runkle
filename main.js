@@ -32,6 +32,7 @@ var home = require('./routes/home');
 var about = require('./routes/about');
 var login = require('./routes/login');
 var homepage = require('./routes/homepage');
+var newairport = require('./routes/newairport');
 //var php = require('./routes/php');
 
 
@@ -70,6 +71,7 @@ app.get('/airport', airport.view);
 app.get('/school', school.view);
 app.get('/home', home.view);
 app.get('/about', about.view);
+app.get('/newairport', newairport.view);
 //app.get('/json_save.php', php.execute);
 
 // Example route
