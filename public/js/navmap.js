@@ -34,7 +34,8 @@ function initializePage() {
   $('#modal0').modal();
   $('#modal1').modal();
   $('#modal2').modal();
-}
+  
+  }
 
 
 
