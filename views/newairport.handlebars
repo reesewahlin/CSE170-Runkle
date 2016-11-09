@@ -74,7 +74,7 @@
               <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">{{airport.nearest.place_name}}</center></span>
             </div>
             <div class="card-action">
-               <center><a href="/airport" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my location</a></center>
+               <center><a href="#modal0" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my location</a></center>
             </div>
           </div>
         </div>
@@ -118,6 +118,53 @@
         <br>
         <br>
       </div>
+
+
+     <!-- Modal for location -->
+  <div id="modal0" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px">
+    <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-compass animated slideInLeft" aria-hidden="true"></i> Your Location</center></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12" style="margin-top: -20px">
+        <center>
+            <h5 class="bp-title" style="margin-right:251px; font-weight: 200">Flight #</h5>
+            <h5 class="bp-deets" style="margin-right:238px">{{boardingInfo.flight}}</h5>
+            <span>
+              <h5 class="bp-title" style="margin-left:220px; font-weight: 200; margin-top: -70px">Passenger</h5>
+              <h5 class="bp-deets" style="margin-top: 8px; margin-left: 182px">{{boardingInfo.passenger}}</h5>
+            </span>
+         </center>
+        </div>
+      </div>
+      <center>
+         <div class="row">
+          <div class="col s12" style="margin-top: -20px">
+            <h5 class="bp-title" style="margin-right: 214px; font-weight: 200">Destination</h5>
+            <h5 class="bp-deets" style="margin-left: -166px">{{boardingInfo.destination}}</h5>
+          </div>
+          <div class="col s12">
+            <h5 class="bp-title" style="font-weight: 200; margin-left: 275px; margin-top:-70px">Gate</h5>
+            <h5 class="bp-deets" style="margin-left: 282px; margin-top: 4px">{{boardingInfo.gate}}</h5>
+          </div>
+        </div>
+      </center>
+        <div class="col-sm-4">
+            <h5 class="bp-title" style="font-weight: 200; margin-left: 8px; margin-top: -13px">Departure</h5>
+            <h5 class="bp-deets" style="margin-left: 8px">{{boardingInfo.departure}}</h5>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <center>
+              <img src="images/barcode.png" style="width:150px">
+            </center>
+          </div>
+        </div> 
+  </div>
+</div>
 
      <!-- Modal for boarding pass -->
   <div id="modal1" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px">
