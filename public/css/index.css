@@ -46,7 +46,11 @@ a.focus {
 }
 
 #card_school {
-     -webkit-animation-delay: 0.15s;
+     -webkit-animation-delay: .20s;
+}
+
+#thumbprint {
+     -webkit-animation-delay: .50s;
 }
 
 
