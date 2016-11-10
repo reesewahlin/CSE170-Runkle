@@ -48,6 +48,7 @@
     <div class="nav-wrapper cyan darken-2">
        <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="material-icons animated slideInDown" style="margin-right: 4px;">navigation</i>Info Hub</a>
        <a href="javascript:history.back()"><i class="fa fa-chevron-circle-left fa-2x animated slideInLeft" style="margin-left: 13px; margin-top: 13px;" aria-hidden="true"></i></a>
+       <a href="#modal1""><i class="fa fa-info-circle fa-2x" style="margin-left: 297px" aria-hidden="true"></i></a>
     </div>
   </nav>
   </div>
@@ -112,8 +113,55 @@
         </div>
       </div>
 
-
-      
+         <!-- Modal for about page -->
+  <div id="modal1" class="modal animated slideInRight" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px; overflow-y: hidden">
+    <div class="modal-content red lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-id-card-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  Behind The App</center></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12" style="margin-top: -20px">
+        <center>
+            <h5 class="bp-title" style="margin-right:251px; font-weight: 200">Creators</h5>
+            <div>
+            <img src="images/reese.png" style="width: 100px; margin-left: 221px;">
+            <img src="images/nick.png" style="width: 100px; margin-top: -124px;margin-right: 6 ">
+            <img src="images/jonathan.png" style="width: 100px; margin-top: -124px; margin-right: 112px">
+            </div>
+            <span>
+              <h5 class="bp-title" style="margin-left:220px; font-weight: 200; margin-top: -70px">Passenger</h5>
+              <h5 class="bp-deets" style="margin-top: 8px; margin-left: 182px">{{boardingInfo.passenger}}</h5>
+            </span>
+         </center>
+        </div>
+      </div>
+      <center>
+         <div class="row">
+          <div class="col s12" style="margin-top: -20px">
+            <h5 class="bp-title" style="margin-right: 214px; font-weight: 200">Destination</h5>
+            <h5 class="bp-deets" style="margin-left: -166px">{{boardingInfo.destination}}</h5>
+          </div>
+          <div class="col s12">
+            <h5 class="bp-title" style="font-weight: 200; margin-left: 275px; margin-top:-70px">Gate</h5>
+            <h5 class="bp-deets" style="margin-left: 282px; margin-top: 4px">{{boardingInfo.gate}}</h5>
+          </div>
+        </div>
+      </center>
+        <div class="col-sm-4">
+            <h5 class="bp-title" style="font-weight: 200; margin-left: 8px; margin-top: -13px">Departure</h5>
+            <h5 class="bp-deets" style="margin-left: 8px">{{boardingInfo.departure}}</h5>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <center>
+              <img src="images/barcode.png" style="width:150px">
+            </center>
+          </div>
+        </div> 
+  </div>
+</div>
       </div>
       </div>
 

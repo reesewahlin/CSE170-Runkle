@@ -31,6 +31,7 @@ function initializePage() {
   Materialize.scrollFire(side_enter1);
   Materialize.scrollFire(side_enter2);
   $('.parallax').parallax();
+  $('#modal1').modal();
 }
 
 
