@@ -46,12 +46,33 @@ a.focus {
 }
 
 #card_school {
+     -webkit-animation-delay: .10s;
+}
+
+#card_home {
      -webkit-animation-delay: .20s;
 }
 
 #thumbprint {
      -webkit-animation-delay: .50s;
 }
+
+#reese {
+     -webkit-animation-delay: .6s;
+}
+
+#nick {
+      -webkit-animation-delay: .8s;
+}
+
+#jonathan {
+      -webkit-animation-delay: .5s;
+}
+
+#inspiration {
+     -webkit-animation-delay: .7s;
+}
+
 
 
 

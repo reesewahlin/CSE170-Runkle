@@ -5,6 +5,8 @@
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/index.css" rel="stylesheet">
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
     integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
       
           <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -46,7 +50,9 @@
 <div class="navbar-fixed">
 <nav>
     <div class="nav-wrapper cyan darken-2">
-       <a class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico;"><i class="material-icons animated slideInLeft" style="margin-right: 4px;">navigation</i>Info Hub</a>
+       <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="material-icons animated slideInDown" style="margin-right: 4px;">navigation</i>Info Hub</a>
+       <a href="javascript:history.back()"><i class="fa fa-chevron-circle-left fa-2x animated slideInLeft" style="margin-left: 13px; margin-top: 13px;" aria-hidden="true"></i></a>
+       <a href="#modal1""><i class="fa fa-info-circle fa-2x" style="margin-left: 297px" aria-hidden="true"></i></a>
     </div>
   </nav>
   </div>
@@ -57,101 +63,100 @@
       <i class="fa fa-bars"></i>
     </a>
     <ul>
-      <li><a href="/newairport" class="btn-floating cyan lighten-4"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+      <li><a href="/newairport" class="btn-floating grey darken-3"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
       <li><a href="/school" class="btn-floating cyan"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
-      <li><a href="/home" class="btn-floating cyan darken-2"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="/home" class="btn-floating cyan darken-2"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
       <li><a href="/about" class="btn-floating cyan darken-4 "><i class="fa fa-info" aria-hidden="true"></i></a></li>
     </ul>
   </div>
- 	</div>
-	
+
+<!--airport card-->
  	<div class="outer_Bounds blue-grey lighten-4">
  	<div class = "container">
-  
     <div class="row" id="row0">
         <div class="col s12 m7">
           <div class="card hoverable scrollspy animated slideInLeft" id="scrolly">
             <div class="card-image">
-              <img src="images/airplane.jpg">
+              <a href="/newairport"><img src="images/airplane.png"></a>
+                 <div class="blue-grey-text">
+              <center><P style="font-weight: 200;margin-top: -59px;position: absolute;margin-left: 26px;">INFORMATION FOR THE</center>
+              <center class="card-title cyan-text text-darken-4" style="margin-bottom: -6px;font-weight: 200;position: absolute;margin-left: 6px;">AIRPORT</center></span>
             </div>
-            <div class="card-content brown-text text-brown darken-1">
-              <center><P style="font-weight: 200;margin-top: 10px">INFORMATION FOR THE</center>
-              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">AIRPORT</center></span>
-            </div>
-            <div class="card-action">
-               <center><a href="/newairport" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my information</a></center>
             </div>
           </div>
         </div>
       </div>
 
-	 <div class="row" id="row0">
+   <!--school card-->   
+    <div class="row" id="row1">
         <div class="col s12 m7">
-          <div class="card hoverable animated slideInLeft" id="scrolly">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
             <div class="card-image">
-              <img src="images/airplane.jpg">
-              <span class="card-title text-blue-grey">Airport</span>
+              <a href="/school"><img src="images/school.png"></a>
+                 <div class="blue-grey-text">
+              <center><P style="font-weight: 200;margin-top: -59px;position: absolute;margin-left: 26px;">INFORMATION FOR</center>
+              <center class="card-title cyan-text text-darken-4" style="margin-bottom: -6px;font-weight: 200;position: absolute;margin-left: 6px;">SCHOOL</center></span>
             </div>
-            <div class="card-content grey-text text-grey darken-4">
-              <p>Get all the information you need to prepare you for flight.</p>
-            </div>
-            <div class="card-action">
-               <center><a href="/airport" class="waves-effect waves-teal btn-flat grey-text text-grey darken-4" style="text-decoration: none">Get my information</a></center>
             </div>
           </div>
         </div>
       </div>
 
-       <div class="row" id="row1">
+        <!--school card-->   
+    <div class="row" id="row2">
         <div class="col s12 m7">
-          <div class="card hoverable animated slideInLeft" id="card_school">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_home">
             <div class="card-image">
-              <img src="images/school.jpg">
-              <span class="card-title brown-text text-brown darken-1">School</span>
+              <a href="/school"><img src="images/lightbulb.png"></a>
+                 <div class="blue-grey-text">
+              <center><P style="font-weight: 200;margin-top: -59px;position: absolute;margin-left: 26px;">INFORMATION FOR THE</center>
+              <center class="card-title cyan-text text-darken-4" style="margin-bottom: -6px;font-weight: 200;position: absolute;margin-left: 6px;">HOME</center></span>
             </div>
-            <div class="card-content brown-text text-brown darken-1">
-              <p>Get all the information you need to prepare you for school.</p>
-            </div>
-            <div class="card-action">
-               <center><a href="/school" class="waves-effect waves-teal btn-flat brown-text text-brown darken-1" style="text-decoration: none">Get my information</a></center>
             </div>
           </div>
         </div>
       </div>
 
-        <div class="row" id="row2">
-        <div class="col s12 m7">
-          <div class="card hoverable" style= "display: none;" id="card_home">
-            <div class="card-image">
-              <img src="images/home.jpg">
-              <span class="card-title">Home</span>
-            </div>
-            <div class="card-content">
-              <p>Get all the information to control your home.</p>
-            </div>
-            <div class="card-action yellow-text text-yellow darken-2">
-               <center><a href="/school" class="waves-effect waves-teal btn-flat grey-text text-darken-3" style="text-decoration: none">Get my information</a></center>
-            </div>
-          </div>
+         <!-- Modal for about page -->
+  <div id="modal1" class="modal animated slideInRight" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px; overflow-y: hidden">
+    <div class="modal-content blue-grey lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+        <h5 style="margin-top: 20px; font-weight: 200"><center></i></center></h5>
         </div>
       </div>
-
-        <div class="row" id="row3">
-        <div class="col s12 m7">
-          <div class="card hoverable" style= "display: none;" id="card_about">
-            <div class="card-image">
-              <img src="images/POV.jpg">
-              <span class="card-title">About</span>
+      <div class="container" style="max-width: 320px;">
+        <div class="row">
+      <div class="col s12 m5">
+      <h5 class="bp-title grey-text text-darken-4" style="margin-left:6px;font-weight: 200;font-family: pacifico;position: absolute;margin-top: -34px;">Creators</h5>
+        <div class="card-panel cyan darken-2" style="height: 263px;margin-top: -6px;">
+          <div class="row">
+        <div class="col s12" style="margin-top: -20px">
+        <center>
+            <div class="container" style="margin-left: 27px;margin-top: 30px;">
+            <center>
+            <img class="animated bounceIn" id="reese" src="images/reese.png" style="width: 100px;position: absolute;margin-left: -15px; border-radius: 0px 4px 0px 0px">
+            <h5 class=" blue-grey-text text-lighten-5 animated slideInLeft" style="position: absolute;margin-left: 69px;margin-top: -22px;font-size: 17px;font-family: Permanent Marker;">Reese Wahlin</h5>
+            <img class="animated bounceIn" id="nick" src="images/nick.png" style="width: 100px;position: absolute;margin-left: -115px;margin-top: 100px; border-radius: 0px 0px 0px 4px">
+            <h5 class=" blue-grey-text text-lighten-5 animated slideInRight" style="position: absolute;margin-left: -17px;margin-top: 201px;font-size: 17px;font-family: Permanent Marker;">Nick Campbell</h5>
+            <h5 class=" blue-grey-text text-lighten-5 animated fadeIn" style="position: absolute;margin-left: -99px;m;margin-top: 59px;f;f;font-size: 17px;ont-family: news cycle;transform: rotate(-90deg);font-family: Permanent Marker;">Jon Rothenberg</h5>
+            <img class="animated bounceIn" id="jonathan" src="images/jonathan.jpg" style="width: 100px;position: absolute;margin-left: -115px; border-radius: 4px 0px 0px 0px">
+             <img class="animated bounceIn" id="inspiration" src="images/inspiration.png" style="width: 100px;position: absolute;margin-left: -15px;margin-top: 100px;border-radius: 0px 0px 4px 0px;: 4px 0px 0px 0px">
             </div>
-            <div class="card-content">
-              <p>See our point of view and the people behind the app.</p>
+            </center>
             </div>
-            <div class="card-action">
-               <center><a href="/about" class="waves-effect waves-teal btn-flat grey-text text-darken-3" style="text-decoration: none">Check us out</a></center>
-            </div>
-          </div>
+            
+         </center>
         </div>
       </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+       
+  </div>
+</div>
       </div>
       </div>
 
