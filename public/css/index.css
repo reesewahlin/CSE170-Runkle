@@ -46,6 +46,10 @@ a.focus {
 }
 
 #card_school {
+     -webkit-animation-delay: .10s;
+}
+
+#card_home {
      -webkit-animation-delay: .20s;
 }
 
