@@ -34,6 +34,8 @@ function initializePage() {
   $('#modal0').modal();
   $('#modal1').modal();
   $('#modal2').modal();
+  $('#card_school').scrollSpy({scrollOffset : 100});
+  $('#card_home').scrollSpy({scrollOffset : 100});
   
   }
 
