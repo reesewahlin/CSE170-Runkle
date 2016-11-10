@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>HCI Project Portfolio</title>  
+  <meta charset="utf-8">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+  <link href="/css/card.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+    integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="css/materialize.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+
+  <link rel="stylesheet" href="css/newschool.css">
+
+</head>
+
+<body>
+  <!--header-->
+  <div class="navbar-fixed scrollspy" id="scrolly">
+    <nav>
+      <div class="nav-wrapper cyan darken-2">
+        <a class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico;"><i class="material-icons animated slideInLeft" style="margin-right: 4px;">navigation</i>Info Hub</a>
+      </div>
+    </nav>
+  </div>
+
+  <!--nav sandwhich bar-->
+  <div class="fixed-action-btn click-to-toggle vertical animated slideInRight">
+    <a class="btn-floating btn-large grey darken-3 waves-effect waves-circle waves-light">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul>
+      <li><a href="/homepage" class="btn-floating cyan lighten-4"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="/school" class="btn-floating cyan"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+      <li><a href="/home" class="btn-floating cyan darken-2"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></i></a></li>
+      <li><a href="/about" class="btn-floating cyan darken-4 "><i class="fa fa-info" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  
+  <!-- main body -->
+  <div class="outer_Bounds blue-grey lighten-4">
+    <div class="container">
+
+      <!-- curr location -->
+      <div class="row" id="row1">
+        <div class="col s12 m7">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_flight">
+            <div class="card-image">
+              <img src="images/location.png">
+            </div>
+            <div class="card-content brown-text text-brown darken-1">
+              <center><p style="font-weight: 200;margin-top: 10px">CURRENT LOCATION</p></center>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">{{schoolInfo.schoolName}}</center></span>
+            </div>
+            <div class="card-action">
+              <center><a href="#modal0" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my location</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- schedule -->
+      <div class="row" id="row1">
+        <div class="col s12 m7">
+          <div class="card hoverable scrollspy" id="card_home">
+            <div class="card-image">
+              <img src="images/schedule.png">
+            </div>
+            <div class="card-content brown-text text-brown darken-1">
+              <center><P style="font-weight: 200;margin-top: 10px">Schedule for the week of:</center>
+              <center style="margin-top: 10px; font-weight: 200"><span class="card-title cyan-text text-darken-4" id="date"></span></center>
+            </div>
+            <div class="card-action">
+               <center><a href="#modal1" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my Schedule</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="row1">
+        <div class="col s12 m7">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
+            <div class="card-image">
+              <img src="images/nearby.png">
+            </div>
+            <div class="card-content brown-text text-brown darken-1">
+              <!-- <center><P style="font-weight: 200;margin-top: 10px">NEARBY LOCATIONS</center> -->
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">FIND PLACES NEARBY</center></span>
+            </div>
+            <div class="card-action">
+               <center><a href="#modal2" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show nearby places</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <br>
+    <br>
+
+
+
+     <!-- Modal for location -->
+  <div id="modal0" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px">
+    <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-compass animated slideInLeft" aria-hidden="true"></i> Your Location</center></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12" style="margin-top: -20px">
+          <center>
+            <h5>{{schoolInfo.schoolName}}</h5>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>        
+
+
+     <!-- Modal for schedule -->
+  <div id="modal1" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px; overflow-y: hidden">
+    <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+          <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-id-card-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  Schedule</center></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12" style="margin-top: -20px">
+          <center>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=2q0ri4u5k3l54t5sel5lqfan60%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="90%" height="400" frameborder="0" scrolling="no"></iframe>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Nearby POIs -->
+  <div id="modal2" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 38px; max-height: 518px; overflow-y: hidden">
+    <div class="modal-content yellow lighten-5" style="border-radius: 10px; height: 514px">
+      <div class="row">
+        <div class="col s12">
+          <h5 style="margin-top: 20px; font-weight: 200">
+          <center style="margin-bottom: -13px;">
+          <i class="fa fa-map-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  POINTS OF INTEREST
+          </center>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12" style="margin-top: -20px">
+        <center>
+            
+        </center>
+      </div>
+    </div>
+  </div>
+
+          
+        <!--button row-->
+  <div class = "container">
+    <div class="row" id="button_row">
+      <a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_flight"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+      <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_home" id="buttonslow2"><i class="fa fa-calendar" aria-hidden="true"></i></a></span>
+      <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_school" id="buttonslow"><i class="fa fa-map-o" aria-hidden="true"></i></a></span>
+    </div>
+  </div>
+
+
+  <!-- script for grabbing the date -->
+  <script>
+    var today = new Date;
+    document.getElementById('date').innerHTML= today.toDateString();
+  </script>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/navmap.js"></script>
+
+  <!-- new nav script -->
+  <script src="js/polyfills.js"></script>
+
+  <!-- <script src="js/demo1.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="https://use.fontawesome.com/d14321a1f4.js"></script>
+
+</body>
+</html>

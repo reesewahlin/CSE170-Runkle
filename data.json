@@ -1,4 +1,10 @@
 {
+	"schoolInfo":
+		{
+			"schoolName": "University of California, San Diego",
+            "address": "9500 Gilman Dr, La Jolla, CA 92093",
+            "place_id": "ChIJT69MQcQG3IARpz6Rifyqtu8"
+		},
 	"boardingInfo": 
  		{
 			"flight": "DT4305",
