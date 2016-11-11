@@ -50,7 +50,7 @@
         </div>
         </div>
    <div class="row">
-   <form action="/login" method="post" class="col s12">
+   <form action="/login" method="post" class="col s12" onsubmit="validateForm()">
       <div class="col s12 m5 card-panel grey darken-3">
        <div class="input-field col s6">
           <input id="first_name" name="first_name" type="text" class="validate white-text">
@@ -83,7 +83,9 @@
 
             <i class="material-icons right">send</i>
           </button>
-      </div>
+
+<!--           <button id="button_submit" >submit</button>
+ -->      </div>
 
       </div>
       </form>

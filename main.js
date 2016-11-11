@@ -19,9 +19,9 @@ var $;
 var jsdom = require("jsdom").jsdom;
 var doc = jsdom();
 var window = doc.defaultView;
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/runkle');
-var form = require('express-form');
+// var mongoose = require('mongoose');
+// mongoose.connect('mongodb://mongodb://test:test@ds149207.mlab.com:49207/runkle');
+// var form = require('express-form');
 var field = form.field;
 
 // Load jQuery with the simulated jsdom window.
@@ -117,7 +117,9 @@ app.post('/login',
 				  	//if (err) throw err;
 				  	console.log('User created!');
 				});
-				res.render('location');
+
+				/** CHANGE THIS FOR LOCATION DISTANCE **/
+				res.render('index');
 				// // get all the users
 				// User.find({first_name: req.form.first_name}, function(err, users) {
 				// 	if (err) throw err;

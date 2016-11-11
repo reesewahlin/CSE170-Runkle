@@ -1,9 +1,16 @@
 'use strict';
+var incor = false;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
 });
+
+function validateForm() {
+	if (incor) {return false}
+	else {return true}
+}
+
 
 /*
  * Function that is called when the document is ready.
@@ -43,11 +50,13 @@ function initializePage() {
 			str += "\tpassword\n";
 			incor = true;
 		}
-
 		if(incor) {
 			alert(str)
 		}
+
 	});
+
+
 }
 
 
