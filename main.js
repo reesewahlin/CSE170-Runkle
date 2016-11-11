@@ -19,9 +19,9 @@ var $;
 var jsdom = require("jsdom").jsdom;
 var doc = jsdom();
 var window = doc.defaultView;
-// var mongoose = require('mongoose');
-// mongoose.connect('mongodb://mongodb://test:test@ds149207.mlab.com:49207/runkle');
-// var form = require('express-form');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://mongodb://test:test@ds149207.mlab.com:49207/runkle');
+var form = require('express-form');
 var field = form.field;
 
 // Load jQuery with the simulated jsdom window.
