@@ -38,6 +38,10 @@ var login = require('./routes/login');
 var homepage = require('./routes/homepage');
 var newairport = require('./routes/newairport');
 var User = require('./models/user.js');
+var newschool = require('./routes/newschool');
+//var php = require('./routes/php');
+
+
 
 
 // Example route
@@ -128,6 +132,8 @@ app.post('/login',
 );
 
 
+app.get('/newschool', newschool.view);
+//app.get('/json_save.php', php.execute);
 
 // Example route
 // app.get('/users', user.list);

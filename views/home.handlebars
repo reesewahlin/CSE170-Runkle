@@ -1,242 +1,316 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!doctype html>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+<html>
+<head>
+  <title>HCI Project Portfolio</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
     integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
-    <link href="/css/home.css" rel="stylesheet">
-    <link href="/css/slider.css" rel="stylesheet">
-    <link href="/css/card.css" rel="stylesheet">
+      
+          <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+     
 
-<!-- Custom Theme files -->
-<link href="css/weatherstyle.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
-<!-- web font -->
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
-<!-- //web font -->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="css/materialize.css">
+
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+       <link rel="stylesheet" href="css/newairport.css">
+
+        
+</head>
+
+<body>
+<!--header-->
+<div class="navbar-fixed">
+<nav>
+    <div class="nav-wrapper cyan darken-2">
+       <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="fa fa-lightbulb-o animated slideInDown" style="margin-right: 6px;margin-top: 12px;"></i>Info Hub</a>
+       <a href="javascript:history.back()"><i class="fa fa-chevron-circle-left fa-2x animated slideInLeft" style="margin-left: 13px; margin-top: 13px;" aria-hidden="true"></i></a>
+    </div>
+  </nav>
+  </div>
+
+      <!--nav sandwhich bar-->
+  <div class="fixed-action-btn vertical click-to-toggle animated slideInRight">
+    <a class="btn-floating btn-large grey darken-3 waves-effect waves-circle waves-light">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul>
+      <li><a href="/homepage" class="btn-floating cyan"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="/newairport" class="btn-floating cyan darken-2"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+      <li><a href="/newschool" class="btn-floating cyan darken-4 "><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  
+  <div class="outer_Bounds blue-grey lighten-4">
+  <div class="container">
 
 
-
-   
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-	<!-- this is a comment in HTML -->
-	<div class="container">
-
-		<div class="jumbotron">
-  			<h1>Home</h1>
-		</div>
-
-    <nav class="nav">
-      <div class="burger">
-            <div class="burger__patty"></div>
+       <div class="row" id="row1">
+        <div class="col s12 m7">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_flight">
+            <div class="card-image">
+              <img src="images/switch.jpg">
+            </div>
+            <div class="card-content brown-text text-brown darken-1">
+              <center><P style="font-weight: 200;margin-top: 10px">ECO SETTINGS FOR</center>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">6111 HAVENHURST PL.</center></span>
+            </div>
+            <div class="card-action">
+               <center><a href="#modal0" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my settings</a></center>
+            </div>
+          </div>
+        </div>
       </div>
 
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="/homepage" class="nav__link c-purple"><i class="fa fa-home" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav__item">
-                <a href="/airport" class="nav__link c-blue"><i class="fa fa-plane" aria-hidden="false"></i></a>
-            </li>
-            <li class="nav__item">
-                <a href="/school" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav__item">
-                <a href="/home" class="nav__link c-red"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
-            </li>
-            <li class="nav__item">
-                <a href="/about" class="nav__link c-green"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-            </li>
-        </ul>
-  </nav>
-</div>
+       <div class="row" id="row1">
+        <div class="col s12 m7">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
+            <div class="card-image">
+              <img src="images/lock.png">
+            </div>
+            <div class="card-content brown-text text-brown darken-1">
+              <center><P style="font-weight: 200;margin-top: 10px">LOCK SETTINGS FOR</center>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">6111 HAVENHURST PL.</center></span>
+            </div>
+            <div class="card-action">
+               <center><a href="#modal1" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">lock my doors</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+       <div class="row" id="row2">
+        <div class="col s12 m7">
+          <div class="card hoverable scrollspy" id="card_home">
+            <div class="card-image">
+              <img src="images/temperature.png">
+            </div>
+            <div class="card-content brown-text text-brown darken-1">
+              <center><P style="font-weight: 200;margin-top: 10px">TEMP SETTINGS FOR</center>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">6111 HAVENHURST PL.</center></span>
+            </div>
+            <div class="card-action">
+               <center><a href="#modal2" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my ID</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+        <br>
+        <br>
+        <br>
+      </div>
 
 
-<!--appliance toggles-->
-<div class = "container">
-     <h1 class="card-title">Care to turn on/off some appliances?</h1>
-    <div class ="card" style="width: 1/4">         
-        <div class="card-block">
-        <div class ="card-center">
-            </br>
-              <p>Hall Light</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-              <p>Bedside Light</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-               <p>Kitchen Light</p>
-               <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-                </div>
-            </div>
+
+     <!-- Modal for power -->
+  <div id="modal0" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px">
+    <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-bolt" aria-hidden="true" style ="
+        margin-right: 10px;"></i>Power Settings</center></h5>
         </div>
-     <div class ="card" style="width: 1/4">         
-        <div class="card-block">
-        <div class ="card-center">
-            </br>
-              <p>Television</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-              <p>Music System</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-               <p>Turntable</p>
-               <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-                </div>
-            </div>
-        </div>
-            <div class ="card" style="width: 1/4">         
-        <div class="card-block">
-        <div class ="card-center">
-            </br>
-              <p>Oven</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-              <p>Stove</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-               <p>Coffee Maker</p>
-               <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-                </div>
-            </div>
-        </div>
+        <div><center>
+        <div class=col s6>
+          <h5 style="font-weight: 200;">Toggle Lights</h5>
+          </div>
+         <div class=col s6>
+          <h5 style="font-weight: 200; margin-left: 22px">Toggle Appliances</h5>
+          </div>
+        <div class="col s6">
+          <h5>Outside</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Hall</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+       <div class="col s6">
+          <h5>Television</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Xbox</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+        <div class="col s6">
+          <h5>Living Room</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Backyard</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+       <div class="col s6">
+          <h5>Stereo</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Computer</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+          </center>
+          </div>
+      </div>
+    </div>
     </div>
 
-    <!--weather-->
-    <div class = "container">
-    <h1>Set thermostat based on weather</h1>
-    <div class ="card" style="width: 1/4">         
-        <div class="card-block">
-        <div class ="card-center">
-            </br>
-              <p>60°</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-              <p>65°</p>
-              <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-               <p>70°</p>
-               <br>
-               <label class="switch">
-                <input type="checkbox">
-                <div class="slider round"></div>
-                </label>
-                <hr>
-                </div>
-            </div>
-      </div>
 
-    <!-- main -->
-  <div class="main-agileits">
-    <div class="main-wthree-row"> 
-      <div class="agileinfo-text"> 
-        <div class="date">
-          <!-- Date-JavaScript -->
-          <script type="text/javascript">
-            var mydate=new Date()
-            var year=mydate.getYear()
-            if(year<1000)
-            year+=1900
-            var day=mydate.getDay()
-            var month=mydate.getMonth()
-            var daym=mydate.getDate()
-            if(daym<10)
-            daym="0"+daym
-            var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
-            var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-            document.write(""+dayarray[day]+" <br> "+daym+"  "+montharray[month]+"  "+year+"")
-          </script>
-          <!-- //Date-JavaScript -->
+     <!-- Modal for boarding pass -->
+  <div id="modal1" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px; overflow-y: hidden">
+    <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
+      <div class="row">
+        <div class="col s12">
+       <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-bolt" aria-hidden="true" style ="
+        margin-right: 10px;"></i>Lock Settings</center></h5>
         </div>
-        <h2>70<span>°</span></h2>
-        <h4>San Diego</h4>
-        <h6>Sunny</h6> 
+        <div><center>
+        <div class=col s6>
+          <h5 style="font-weight: 200;">Outside Doors</h5>
+          </div>
+         <div class=col s6>
+          <h5 style="font-weight: 200; margin-left: 51px">Inside Doors</h5>
+          </div>
+        <div class="col s6">
+          <h5>Front</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Garage</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+       <div class="col s6">
+          <h5>Master</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Guest</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+        <div class="col s6">
+          <h5>Patio</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Backyard</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+       <div class="col s6">
+          <h5>Gun Safe</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          <h5>Closet</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
+          </div>
+          </center>
+          </div>
       </div>
+    </div>
+    </div>
+
+  <!-- Modal for ID -->
+  <div id="modal2" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 38px; max-height: 518px; overflow-y: hidden">
+    <div class="modal-content yellow lighten-5" style="border-radius: 10px; height: 514px">
+      <div class="row">
+        <div class="col s12">
+        <h5 style="margin-top: 20px; font-weight: 200"><center style="margin-bottom: -13px;"><i class="fa fa-id-card-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  California ID</center></h5>
+        </div>
       </div>
-    </div>  
-  </div>
-  </div>
-  <!-- //main -->
+      <center>
+      <img class="animated fadeIn" id="thumbprint" src="images/portrait.png" style="width: 140px;">
+      </center>
+          <span>
+          <center>
+            <img class="animated fadeIn" id="thumbprint" src="images/signature.png" style="width: 140px;">
+            </center>
+          </span>
+      <div class="row">
+        <div class="col s12" style="margin-top: -20px">
+        <center>
+            <h5 class="bp-title" style="margin-right:251px; font-weight: 200; margin-top: -7px">Name</h5>
+            <div class="col s12">
+            <h5 class="bp-deets" style="margin-right:171px; margin-top: -9px">{{boardingInfo.passenger}}</h5>
+            </div>
+            <span>
+            <div class="col s12">
+              <h5 class="bp-title" style="margin-left: 236px;font-weight: 200;margin-top: -58px;">Height</h5>
+              </div>
+              <div class="col s12">
+              <h5 class="bp-deets" style="margin-top: -30px;margin-left: 251px;">6' 2"</h5>
+              </div>
+            </span>
+         </center>
+        </div>
+      </div>
+      <center>
+         <div class="row">
+          <div class="col s12" style="margin-top: -20px">
+            <h5 class="bp-title" style="margin-right: 226px;font-weight: 200;margin-top: 9px;">Address</h5>
+            <div class="col s6">
+            <h5 class="bp-deets" style="margin-left: 7px;margin-top: -6px;">1 Infinite Loop,<br>Cupertino CA</h5>
+            </div>
+               <div class="col s12">
+            <span>
+            <h5 class="bp-title" style="font-weight: 200;margin-left: 266px;margin-top: -86px;">Age</h5>
+             <div class="col s12">
+            <h5 class="bp-deets" style="margin-left: 278px;margin-top: -5px;">22</h5>
+            </div>
+            </span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </center>
+        <div class="row">
+          <div class="col s12">
+            <center>
+              <img class="animated fadeIn" id="thumbprint" src="images/fingerprint2.png" style="width: 90px;margin-top: -172px;">
+            </center>
+          </div>
+        </div> 
+        </div>
+        </div>
 
-       
-           
-           
-      
+          
+        <!--button row-->
+  <div class = "container">
+  <div class="row" id="button_row">
+    <a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_flight"><i class="fa fa-toggle-on" aria-hidden="true"></i></a>
+    <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_school" id="buttonslow"><i class="fa fa-lock" aria-hidden="true"></i></a></span>
+    <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_home" id="buttonslow2"><i class="fa fa-thermometer-empty" aria-hidden="true"></i></a></span>
+    </div>
+      </div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/vertnav.js"></script>
 
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- Nav Script-->
-  </body>
+
+
+
+        
+
+
+        <!--airport card-->
+<!--    <div class ="card" style="width: 20%">
+      <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/airport.jpg" data-holder-rendered="true">
+      <div class="card-block">
+          <h4 class="card-title"></h4>
+          <a href="/airport" id='example' rel='popover' data-placement='auto' data-trigger ="hover" title = 'Hey there!' data-content='Click a location to begin' class="btn btn-primary" style = "width:100%">
+            <i class="fa fa-plane fa-lg" aria-hidden="true"></i> Airport</a>
+
+        </div>
+      </div> -->
+
+
+     <!--home-->
+<!--       <div class ="card" style="width: 20%">
+      <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="/images/home.png" data-holder-rendered="true">
+      <div class="card-block">
+          <h4 class="card-title"></h4>
+          <a href="/home" class="btn btn-primary" style = "width:100%">
+            <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
+        </div>
+     </div> -->
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/navmap.js"></script>
+  
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+ -->  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script> -->
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+ -->  <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+  
+  <!-- new nav script -->
+  <script src="js/polyfills.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+      <script src="https://use.fontawesome.com/d14321a1f4.js"></script>
+
+</body>
 </html>

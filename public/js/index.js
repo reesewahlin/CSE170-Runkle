@@ -12,7 +12,7 @@ function initializePage() {
 
   var options = [
     {selector: '#scrolly', offset: 450, callback: function(el) {
-      Materialize.toast("Choose a card to begin", 2500, 'rounded');
+      Materialize.toast("Tap a card to begin", 2500, 'rounded');
     } }
   ];
    var side_enter1 = [
@@ -31,6 +31,7 @@ function initializePage() {
   Materialize.scrollFire(side_enter1);
   Materialize.scrollFire(side_enter2);
   $('.parallax').parallax();
+  $('#modal1').modal();
 }
 
 

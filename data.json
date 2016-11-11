@@ -1,4 +1,29 @@
 {
+	"school":
+		{
+			"name": "University of California, San Diego",
+            "address": "9500 Gilman Dr, La Jolla, CA 92093",
+            "place_id": "ChIJT69MQcQG3IARpz6Rifyqtu8",
+            "rest_1":
+            	{
+            		"name": "Regents Pizzeria",
+            		"address": "4150 Regents Park Row, La Jolla, CA 92037",
+            		"phone": "(858) 550-0406"
+            	},
+            "rest_2":
+            	{
+            		"name": "Rock Bottom Restaurant & Brewery",
+            		"address": "8980 Villa La Jolla Dr, La Jolla, CA 92037",
+            		"phone": "(858) 450-9277"
+            	},
+            "rest_3":
+            	{
+            		"name": "Urban Plates",
+            		"address": "8707 Villa La Jolla Dr, La Jolla, CA 92037",
+                    "phone": "(858) 263-0818"
+            	}
+		},
+
 	"boardingInfo": 
  		{
 			"flight": "DT4305",

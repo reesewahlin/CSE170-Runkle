@@ -4681,8 +4681,11 @@ small {
 
 @media only screen and (max-width: 600px) {
   #toast-container {
-    min-width: 100%;
+    min-width: 88%;
     bottom: 0%;
+    align-items: center;
+    margin-left: 20px;
+
   }
 }
 
