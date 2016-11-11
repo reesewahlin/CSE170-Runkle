@@ -63,10 +63,9 @@
       <i class="fa fa-bars"></i>
     </a>
     <ul>
-      <li><a href="/newairport" class="btn-floating grey darken-3"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
-      <li><a href="/school" class="btn-floating cyan"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
-      <li><a href="/home" class="btn-floating cyan darken-2"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
-      <li><a href="/about" class="btn-floating cyan darken-4 "><i class="fa fa-info" aria-hidden="true"></i></a></li>
+      <li><a href="/newairport" class="btn-floating cyan"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+      <li><a href="/newschool" class="btn-floating cyan darken-2"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+      <li><a href="/home" class="btn-floating cyan darken-4 "><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 
@@ -92,7 +91,7 @@
         <div class="col s12 m7">
           <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
             <div class="card-image">
-              <a href="/school"><img src="images/school.png"></a>
+              <a href="/newschool"><img src="images/school.png"></a>
                  <div class="blue-grey-text">
               <center><P style="font-weight: 200;margin-top: -59px;position: absolute;margin-left: 26px;">INFORMATION FOR</center>
               <center class="card-title cyan-text text-darken-4" style="margin-bottom: -6px;font-weight: 200;position: absolute;margin-left: 6px;">SCHOOL</center></span>
@@ -107,7 +106,7 @@
         <div class="col s12 m7">
           <div class="card hoverable scrollspy animated slideInLeft" id="card_home">
             <div class="card-image">
-              <a href="/school"><img src="images/lightbulb.png"></a>
+              <a href="/newschool"><img src="images/lightbulb.png"></a>
                  <div class="blue-grey-text">
               <center><P style="font-weight: 200;margin-top: -59px;position: absolute;margin-left: 26px;">INFORMATION FOR THE</center>
               <center class="card-title cyan-text text-darken-4" style="margin-bottom: -6px;font-weight: 200;position: absolute;margin-left: 6px;">HOME</center></span>
@@ -118,7 +117,7 @@
       </div>
 
          <!-- Modal for about page -->
-  <div id="modal1" class="modal animated slideInRight" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px; overflow-y: hidden">
+  <div id="modal1" class="modal animated slideInRight" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px;"> <!-- overflow-y: hidden-->
     <div class="modal-content blue-grey lighten-5" style="border-radius: 10px; height: 479px">
       <div class="row">
         <div class="col s12">
@@ -126,35 +125,46 @@
         </div>
       </div>
       <div class="container" style="max-width: 320px;">
-        <div class="row">
+        <div class="row" style="margin-top: 12px;">
       <div class="col s12 m5">
       <h5 class="bp-title grey-text text-darken-4" style="margin-left:6px;font-weight: 200;font-family: pacifico;position: absolute;margin-top: -34px;">Creators</h5>
         <div class="card-panel cyan darken-2" style="height: 263px;margin-top: -6px;">
-          <div class="row">
+        <div class="row">
         <div class="col s12" style="margin-top: -20px">
         <center>
             <div class="container" style="margin-left: 27px;margin-top: 30px;">
             <center>
             <img class="animated bounceIn" id="reese" src="images/reese.png" style="width: 100px;position: absolute;margin-left: -15px; border-radius: 0px 4px 0px 0px">
-            <h5 class=" blue-grey-text text-lighten-5 animated slideInLeft" style="position: absolute;margin-left: 69px;margin-top: -22px;font-size: 17px;font-family: Permanent Marker;">Reese Wahlin</h5>
+            <h5 class=" blue-grey-text text-lighten-5 animated fadeIn" id="reeseName" style="position: absolute;margin-left: 69px;margin-top: -22px;font-size: 17px;font-family: Permanent Marker;">Reese Wahlin</h5>
             <img class="animated bounceIn" id="nick" src="images/nick.png" style="width: 100px;position: absolute;margin-left: -115px;margin-top: 100px; border-radius: 0px 0px 0px 4px">
-            <h5 class=" blue-grey-text text-lighten-5 animated slideInRight" style="position: absolute;margin-left: -17px;margin-top: 201px;font-size: 17px;font-family: Permanent Marker;">Nick Campbell</h5>
-            <h5 class=" blue-grey-text text-lighten-5 animated fadeIn" style="position: absolute;margin-left: -99px;m;margin-top: 59px;f;f;font-size: 17px;ont-family: news cycle;transform: rotate(-90deg);font-family: Permanent Marker;">Jon Rothenberg</h5>
+            <h5 class=" blue-grey-text text-lighten-5 animated fadeIn" id="nickName" style="position: absolute;margin-left: -17px;margin-top: 201px;font-size: 17px;font-family: Permanent Marker;">Nick Campbell</h5>
+            <h5 class=" blue-grey-text text-lighten-5 animated fadeIn" id="jonName" style="position: absolute;margin-left: -99px;m;margin-top: 59px;font-size: 17px;font-family: news cycle;transform: rotate(-90deg);font-family: Permanent Marker;">Jon Rothenberg</h5>
             <img class="animated bounceIn" id="jonathan" src="images/jonathan.jpg" style="width: 100px;position: absolute;margin-left: -115px; border-radius: 4px 0px 0px 0px">
-             <img class="animated bounceIn" id="inspiration" src="images/inspiration.png" style="width: 100px;position: absolute;margin-left: -15px;margin-top: 100px;border-radius: 0px 0px 4px 0px;: 4px 0px 0px 0px">
+            <img class="animated bounceIn" id="inspiration" src="images/inspiration.png" style="width: 100px;position: absolute;margin-left: -15px;margin-top: 100px;border-radius: 0px 0px 4px 0px;: 4px 0px 0px 0px">
+            <h5 class=" blue-grey-text text-lighten-5 animated fadeIn" id="jonName" style="position: absolute;margin-left: 149px;m;margin-top: 144px;font-size: 17px;font-family: news cycle;transform: rotate(90deg);font-family: Permanent Marker;">Inspiration</h5>
             </div>
             </center>
             </div>
-            
          </center>
         </div>
       </div>
+    </div>
+    </div>
+    </div>
+        <div class="container" style="max-width: 320px;">
+        <div class="row" style="margin-top: 12px;">
+      <div class="col s12 m5">
+      <h5 class="bp-title grey-text text-darken-4" style="margin-left:6px;font-weight: 200;font-family: pacifico;position: absolute;margin-top: -34px;">Point of View</h5>
+        <div class="card-panel cyan darken-2" style="height: 91px;margin-top: -6px;">
+        <p>"People send too much time trying (and sometimes failing) to acquire the "
+      
         </div>
       </div>
     </div>
     </div>
-      
-       
+    </div>
+    </div>  
+
   </div>
 </div>
       </div>

@@ -13,7 +13,6 @@
 .jumbotron {
 	position: relative;
 	background-color: none;
-
 }
 
 .jumbotron:after {
@@ -71,6 +70,18 @@ a.focus {
 
 #inspiration {
      -webkit-animation-delay: .7s;
+}
+
+#reeseName {
+     -webkit-animation-delay: .6s;
+}
+
+#nickName {
+     -webkit-animation-delay: .8s;
+}
+
+#jonName {
+     -webkit-animation-delay: .5s;
 }
 
 
