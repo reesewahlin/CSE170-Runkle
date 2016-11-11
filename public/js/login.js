@@ -1,5 +1,5 @@
 'use strict';
-var incor = false;
+var incor = 4;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -7,7 +7,10 @@ $(document).ready(function() {
 });
 
 function validateForm() {
-	if (incor) {return false}
+	if (incor!=0) {
+		incor=4;
+		return false;
+	}
 	else {return true}
 }
 
@@ -32,28 +35,22 @@ function initializePage() {
 		var password = $("#password").val().toLowerCase();
 
 		var str = "The following fields are incorrect\n";
-		var incor = false;
 
 		if(first != "calvin") {
 			str += "\tfirst name\n";
-			incor = true;
-		}
+		} else {incor--}
 		if(last != "gomez") {
 			str += "\tlast name\n";
-			incor = true;
-		}
+		}else {incor--}
 		if(email != "cuddlebear23@aol.com") {
 			str += "\temail\n";
-			incor = true;
-		}
+		}else {incor--}
 		if(password != "password") {
 			str += "\tpassword\n";
-			incor = true;
-		}
-		if(incor) {
+		}else {incor--}
+		if(incor>0) {
 			alert(str)
 		}
-
 	});
 
 
