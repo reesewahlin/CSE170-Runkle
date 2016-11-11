@@ -10,10 +10,13 @@ $(document).ready(function() {
  */
 function initializePage() {
 
- $("#first_input, #last_input, #email_input, #password_input").addClass('animated slideInLeft');
- $("#first_input, #last_input, #email_input, #password_input").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
- 	 $("#first_input, #last_input, #email_input, #password_input").removeClass('animated slideInLeft');
- });
+$("#first_input, #last_input, #email_input, #password_input").
+ 	addClass('animated slideInLeft');
+$("#first_input, #last_input, #email_input, #password_input").
+ 	one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+ 	 	$("#first_input, #last_input, #email_input, #password_input").
+ 	 		removeClass('animated slideInLeft');
+ 	});
 }
 
 

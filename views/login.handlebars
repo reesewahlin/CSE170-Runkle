@@ -50,35 +50,36 @@
         </div>
         </div>
    <div class="row">
-   <form class="col s12">
+   <form action="/login" method="post" class="col s12">
       <div class="col s12 m5 card-panel grey darken-3">
        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate white-text">
+          <input id="first_name" name="first_name" type="text" class="validate white-text">
           <label for="first_name" class="white-text" id="first_input" style="font-weight: 200">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate white-text">
+          <input id="last_name" name="last_name" type="text" class="validate white-text">
           <label for="last_name" class="white-text" id="last_input" style="font-weight: 200">Last Name</label>
         </div>
 
         <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate white-text">
+          <input id="email" name="email" type="email" class="validate white-text">
           <label for="email" class="white-text" id="email_input" style="font-weight: 200">Email</label>
         </div>
         </div>
 
         <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate white-text">
+          <input id="password" name="password" type="password" class="validate white-text">
           <label for="password" class="white-text" id="password_input" style="font-weight: 200">Password</label>
         </div>
       </div>
 
        <div class="row center-align">
-       <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" type="submit" formaction="/homepage" formmethod="get" name="action" style="font-weight: 200">Submit
-       <i class="material-icons right">send</i>
-       </button>
+          <input type="submit">
+          <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" type="submit" formaction="/homepage" formmethod="get" name="action" style="font-weight: 200">Submit
+            <i class="material-icons right">send</i>
+          </button>
       </div>
 
       </div>
