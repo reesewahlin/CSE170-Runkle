@@ -19,6 +19,7 @@ function initialize() {
 function renderHomepage() {
 	//post to a new route that logs location and distance data then renders the homepage
 	console.log("areas: "+areas);
+	res.render('homepage');
 }
 
 function calculateDistances(callback) {
