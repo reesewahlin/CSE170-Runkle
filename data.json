@@ -92,8 +92,14 @@
 					},
 				"distance": 381.5196261147598
 			}
-		}
+		},
 
+	"personal":
+		{
+			"address": "1 Infinite Loop, Cupertino CA",
+			"height": "6'2",
+			"age": "22"
+		}
 
 }
 
