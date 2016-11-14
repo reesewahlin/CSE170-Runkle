@@ -24,7 +24,6 @@
       <link rel="stylesheet" type="text/css" href="css/animate.css">
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
        <link rel="stylesheet" href="css/login.css">
-       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
 
 
 </head>
@@ -33,9 +32,9 @@
 
 <!--header-->
 <div class="navbar-fixed">
-<nav>
+  <nav>
     <div class="nav-wrapper cyan darken-2">
-       <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="material-icons animated slideInDown" style="margin-right: 4px;">navigation</i>Info Hub</a>
+      <a class="brand-logo center animated fadeIn" style="font-weight: 200"><i class="material-icons animated slideInLeft">navigation</i>Info Hub</a>
     </div>
   </nav>
   </div>
@@ -47,40 +46,46 @@
 <div class ="animated fadeInDown" id="vert_align">
  <div class="row">
         <div class="col s12">
-          <h3 class="white-text center-align" style="font-weight: 200">Login below</h3>
+          <h3 class="black-text center-align" style="font-weight: 200">Login below</h3>
         </div>
         </div>
    <div class="row">
-   <form class="col s12">
+   <form action="/login" method="post" class="col s12" onsubmit="return validateForm()">
       <div class="col s12 m5 card-panel grey darken-3">
        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate white-text">
+          <input id="first_name" name="first_name" type="text" class="validate white-text">
           <label for="first_name" class="white-text" id="first_input" style="font-weight: 200">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate white-text">
+          <input id="last_name" name="last_name" type="text" class="validate white-text">
           <label for="last_name" class="white-text" id="last_input" style="font-weight: 200">Last Name</label>
         </div>
 
         <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate white-text">
+          <input id="email" name="email" type="email" class="validate white-text">
           <label for="email" class="white-text" id="email_input" style="font-weight: 200">Email</label>
         </div>
         </div>
 
         <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate white-text">
+          <input id="password" name="password" type="password" class="validate white-text">
           <label for="password" class="white-text" id="password_input" style="font-weight: 200">Password</label>
         </div>
       </div>
 
        <div class="row center-align">
-       <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" type="submit" formaction="/homepage" formmethod="get" name="action" style="font-weight: 200">Submit
-       <i class="material-icons right">send</i>
-       </button>
-      </div>
+          <!-- <input type="submit"> -->
+<!--           <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" type="submit" formaction="/homepage" formmethod="get" name="action" style="font-weight: 200">Submit
+ --> 
+            <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" style="font-weight: 200">Submit
+
+            <i class="material-icons right">send</i>
+          </button>
+
+<!--           <button id="button_submit" >submit</button>
+ -->      </div>
 
       </div>
       </form>

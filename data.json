@@ -35,6 +35,15 @@
 			"class": "First"		
 		},
 
+	"login_credentials": 	
+		{
+			"first_name": "Calvin",
+			"last_name": "Gomez",
+			"email": "cuddlebear23@aol.com",
+			"password": "password"
+
+		},
+
 	"login": 
 		{
 			"userName": "Calvin Gomez",
@@ -46,15 +55,6 @@
 		{
 			"closest": 
 				{
-					"area_name": "airport",
-					"card": {
-						"img": "airport.jpg",
-						"href": "airport",
-						"favicon": "fa fa-plane fa-lg"
-					}
-				},
-			"close":
-				{
 					"area_name": "school",
 					"card": {
 						"img": "school.jpg",
@@ -64,6 +64,16 @@
 					"place_name": "University of California, San Diego",
 					"place_id": "ChIJT69MQcQG3IARpz6Rifyqtu8",
 					"distance": 11776.607660414691
+
+				},
+			"close":
+				{
+					"area_name": "airport",
+					"card": {
+						"img": "airport.jpg",
+						"href": "airport",
+						"favicon": "fa fa-plane fa-lg"
+					}
 				},
 			"closeish":
 							{

@@ -47,7 +47,7 @@ function success(pos) {
 	var requestSchool = {
 	    location: currentLocation,
 	    radius: '500',
-	    query: 'university'
+	    query: 'ucsd'
 	};
     console.log("Current Location: "+currentLocation);
 
