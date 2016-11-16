@@ -37,12 +37,13 @@
 </head>
 
 <body>
+
 <!--header-->
 <div class="navbar-fixed">
 <nav>
     <div class="nav-wrapper cyan darken-2">
-       <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="fa fa-plane animated slideInDown" aria-hidden="true" style="margin-top: 14px; margin-right: 6px"></i>Info Hub</a>
-       <a href="javascript:history.back()"><i class="fa fa-chevron-circle-left fa-2x animated slideInLeft" style="margin-left: 13px; margin-top: 13px;" aria-hidden="true"></i></a>
+       <a href="homepage" class="brand-logo center" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="fa fa-plane" aria-hidden="true" style="margin-top: 14px; margin-right: 6px"></i>Info Hub</a>
+       <a href="javascript:history.back()"><i class="fa fa-chevron-circle-left fa-2x" style="margin-left: 13px; margin-top: 13px;" aria-hidden="true"></i></a>
     </div>
   </nav>
   </div>
@@ -65,14 +66,14 @@
 
        <div class="row" id="row1">
         <div class="col s12 m7">
-          <div class="card hoverable scrollspy animated slideInRight" id="card_flight">
-            <div class="card-image">
-              <img src="images/location.png">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_flight">
+             <a href="#modal0" style="text-decoration: none"><div class="card-image">
+             <img src="images/location.jpg">
             </div>
             <div class="card-content brown-text text-brown darken-1">
               <center><P style="font-weight: 200;margin-top: 10px">CURRENT LOCATION</center>
               <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">{{airport.nearest.place_name}}</center></span>
-            </div>
+            </div></a>
             <div class="card-action">
                <center><a href="#modal0" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show nearest airport</a></center>
             </div>
@@ -82,14 +83,14 @@
 
        <div class="row" id="row1">
         <div class="col s12 m7">
-          <div class="card hoverable scrollspy animated slideInRight" id="card_school">
-            <div class="card-image">
+          <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
+             <a href="#modal1" style="text-decoration: none"><div class="card-image">
               <img src="images/boardingpass.png">
             </div>
             <div class="card-content brown-text text-brown darken-1">
               <center><P style="font-weight: 200;margin-top: 10px">YOUR TICKET TO</center>
               <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">{{boardingInfo.destination}}</center></span>
-            </div>
+            </div></a>
             <div class="card-action">
                <center><a href="#modal1" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my boarding pass</a></center>
             </div>
@@ -102,12 +103,12 @@
         <div class="col s12 m7">
           <div class="card hoverable scrollspy" id="card_home">
             <div class="card-image">
-              <img src="images/fingerprint.png">
+               <a href="#modal2" style="text-decoration: none"><img src="images/fingerprint.png">
             </div>
             <div class="card-content brown-text text-brown darken-1">
               <center><P style="font-weight: 200;margin-top: 10px">IDENTIFICATION FOR</center>
               <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">{{boardingInfo.passenger}}</center></span>
-            </div>
+            </div></a>
             <div class="card-action">
                <center><a href="#modal2" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my ID</a></center>
             </div>

@@ -17,7 +17,7 @@ function initializePage() {
    var side_enter1 = [
     {selector: '#row2', offset: 10, callback: function(el) {
     	$('#card_home').show();
-    	$('#card_home').addClass('animated slideInRight');
+    	$('#card_home').addClass('animated slideInLeft');
     } }
   ];
    var side_enter2 = [
