@@ -46,14 +46,14 @@
     </div>
   </nav>
   </div>
-
       <!--nav sandwhich bar-->
   <div class="fixed-action-btn vertical click-to-toggle animated slideInRight">
     <a class="btn-floating btn-large grey darken-3 waves-effect waves-circle waves-light">
       <i class="fa fa-bars"></i>
     </a>
     <ul>
-      <li><a href="/homepage" class="btn-floating cyan"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="/homepage" class="btn-floating cyan lighten-3"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="/newairport" class="btn-floating light-blue darken-4"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
       <li><a href="/newschool" class="btn-floating cyan darken-2"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
       <li><a href="/home" class="btn-floating cyan darken-4 "><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
     </ul>
@@ -65,7 +65,7 @@
 
        <div class="row" id="row1">
         <div class="col s12 m7">
-          <div class="card hoverable scrollspy animated slideInLeft" id="card_flight">
+          <div class="card hoverable scrollspy animated slideInRight" id="card_flight">
             <div class="card-image">
               <img src="images/location.png">
             </div>
@@ -82,7 +82,7 @@
 
        <div class="row" id="row1">
         <div class="col s12 m7">
-          <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
+          <div class="card hoverable scrollspy animated slideInRight" id="card_school">
             <div class="card-image">
               <img src="images/boardingpass.png">
             </div>
@@ -213,7 +213,7 @@
               <h5 class="bp-title" style="margin-left: 236px;font-weight: 200;margin-top: -58px;">Height</h5>
               </div>
               <div class="col s12">
-              <h5 class="bp-deets" style="margin-top: -30px;margin-left: 251px;">6' 2"</h5>
+              <h5 class="bp-deets" style="margin-top: -30px;margin-left: 251px;">{{personal.height}}</h5>
               </div>
             </span>
          </center>
@@ -224,13 +224,13 @@
           <div class="col s12" style="margin-top: -20px">
             <h5 class="bp-title" style="margin-right: 226px;font-weight: 200;margin-top: 9px;">Address</h5>
             <div class="col s6">
-            <h5 class="bp-deets" style="margin-left: 7px;margin-top: -6px;">1 Infinite Loop,<br>Cupertino CA</h5>
+            <h5 class="bp-deets" style="margin-left: 7px;margin-top: -6px;">{{personal.address}}</h5>
             </div>
                <div class="col s12">
             <span>
             <h5 class="bp-title" style="font-weight: 200;margin-left: 266px;margin-top: -86px;">Age</h5>
              <div class="col s12">
-            <h5 class="bp-deets" style="margin-left: 278px;margin-top: -5px;">22</h5>
+            <h5 class="bp-deets" style="margin-left: 278px;margin-top: -5px;">{{personal.age}}</h5>
             </div>
             </span>
             </div>

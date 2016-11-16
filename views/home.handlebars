@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 
 <html>
 <head>
@@ -8,33 +8,35 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="/css/index.css" rel="stylesheet">
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
     integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
 
       
-          <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
      
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="css/materialize.css">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-      <link rel="stylesheet" type="text/css" href="css/animate.css">
-       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/newairport.css">
 
-        
+   <link href="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.css" rel="stylesheet">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhc8g7GgjXig6yXX4jqGOahy9zNHDPjG4&libraries=geometry,places"></script>
+  <script src="/js/airport.js"></script>
+
 </head>
 
 <body>
@@ -42,21 +44,22 @@
 <div class="navbar-fixed">
 <nav>
     <div class="nav-wrapper cyan darken-2">
-       <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="fa fa-lightbulb-o animated slideInDown" style="margin-right: 6px;margin-top: 12px;"></i>Info Hub</a>
+       <a href="homepage" class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico; text-decoration: none"><i class="fa fa-lightbulb-o animated slideInDown" aria-hidden="true" style="margin-top: 14px; margin-right: 6px"></i>Info Hub</a>
        <a href="javascript:history.back()"><i class="fa fa-chevron-circle-left fa-2x animated slideInLeft" style="margin-left: 13px; margin-top: 13px;" aria-hidden="true"></i></a>
     </div>
   </nav>
   </div>
 
-      <!--nav sandwhich bar-->
+        <!--nav sandwhich bar-->
   <div class="fixed-action-btn vertical click-to-toggle animated slideInRight">
     <a class="btn-floating btn-large grey darken-3 waves-effect waves-circle waves-light">
       <i class="fa fa-bars"></i>
     </a>
     <ul>
-      <li><a href="/homepage" class="btn-floating cyan"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-      <li><a href="/newairport" class="btn-floating cyan darken-2"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
-      <li><a href="/newschool" class="btn-floating cyan darken-4 "><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+      <li><a href="/homepage" class="btn-floating cyan lighten-3"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="/newairport" class="btn-floating cyan"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+      <li><a href="/newschool" class="btn-floating cyan darken-2"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+      <li><a href="/home" class="btn-floating light-blue darken-4 "><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
     </ul>
   </div>
   
@@ -67,10 +70,11 @@
           <div class="card hoverable scrollspy animated slideInLeft" id="card_flight">
             <div class="card-image">
               <img src="images/home.jpg">
+              <img src="images/switch.jpg">
             </div>
             <div class="card-content brown-text text-brown darken-1">
-              <center><P style="font-weight: 200;margin-top: 10px">ECO SETTINGS FOR</center>
-              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">6111 HAVENHURST PL.</center></span>
+              <center><P style="font-weight: 200;margin-top: 10px">LIGHT SETTINGS FOR</center>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">{{personal.address}}</center></span>
             </div>
             <div class="card-action">
                <center><a href="#modal0" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my settings</a></center>
@@ -82,15 +86,15 @@
        <div class="row" id="row1">
         <div class="col s12 m7">
           <div class="card hoverable scrollspy animated slideInLeft" id="card_school">
-            <div class="card-image">
+              <div class="card-image">
               <img src="images/lock.png">
             </div>
             <div class="card-content brown-text text-brown darken-1">
               <center><P style="font-weight: 200;margin-top: 10px">LOCK SETTINGS FOR</center>
-              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">6111 HAVENHURST PL.</center></span>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">{{personal.address}}</center></span>
             </div>
             <div class="card-action">
-               <center><a href="#modal1" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">lock my doors</a></center>
+               <center><a href="#modal1" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my settings</a></center>
             </div>
           </div>
         </div>
@@ -100,15 +104,15 @@
        <div class="row" id="row2">
         <div class="col s12 m7">
           <div class="card hoverable scrollspy" id="card_home">
-            <div class="card-image">
+               <div class="card-image">
               <img src="images/temperature.png">
             </div>
             <div class="card-content brown-text text-brown darken-1">
-              <center><P style="font-weight: 200;margin-top: 10px">TEMP SETTINGS FOR</center>
-              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -14px; font-weight: 200">6111 HAVENHURST PL.</center></span>
+              <center><P style="font-weight: 200;margin-top: 10px">THERMOSTAT SETTINGS FOR</center>
+              <span class="card-title cyan-text text-darken-4"><center style="margin-top: -3px; font-weight: 200;line-height: initial;">{{personal.address}}</center></span>
             </div>
             <div class="card-action">
-               <center><a href="#modal2" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">ALTER TEMPERATURE</a></center>
+               <center><a href="#modal2" class="waves-effect waves btn-flat brown-text text-brown darken-1" style="text-decoration: none; font-weight: 200">Show my settings</a></center>
             </div>
           </div>
         </div>
@@ -116,46 +120,26 @@
         <br>
         <br>
         <br>
-  </div>
+      </div>
 
 
 
-     <!-- Modal for power -->
+     <!-- Modal for location -->
   <div id="modal0" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px">
     <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
       <div class="row">
         <div class="col s12">
-        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-bolt" aria-hidden="true" style ="
-        margin-right: 10px;"></i>Power Settings</center></h5>
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-compass animated slideInLeft" aria-hidden="true"></i> Your Location</center></h5>
         </div>
-        <div><center>
-        <div class=col s6>
-          <h5 style="font-weight: 200;">Toggle Lights</h5>
-          </div>
-         <div class=col s6>
-          <h5 style="font-weight: 200; margin-left: 22px">Toggle Appliances</h5>
-          </div>
-        <div class="col s6">
-          <h5>Outside</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Hall</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-       <div class="col s6">
-          <h5>Television</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Xbox</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-        <div class="col s6">
-          <h5>Living Room</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Backyard</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-       <div class="col s6">
-          <h5>Stereo</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Computer</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-          </center>
-          </div>
+      </div>
+      <div class="row">
+        <center>
+        <div id="map_canvas" style="width:90%; height:350px"></div>
+        </center>
       </div>
     </div>
-    </div>
+  </div>
+        
 
 
      <!-- Modal for boarding pass -->
@@ -163,77 +147,82 @@
     <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
       <div class="row">
         <div class="col s12">
-       <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-bolt" aria-hidden="true" style ="
-        margin-right: 10px;"></i>Lock Settings</center></h5>
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-id-card-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  Boarding Pass</center></h5>
         </div>
-        <div><center>
-        <div class=col s6>
-          <h5 style="font-weight: 200;">Outside Doors</h5>
-          </div>
-         <div class=col s6>
-          <h5 style="font-weight: 200; margin-left: 51px">Inside Doors</h5>
-          </div>
-        <div class="col s6">
-          <h5>Front</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Garage</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-       <div class="col s6">
-          <h5>Master</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Guest</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-        <div class="col s6">
-          <h5>Patio</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Backyard</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-       <div class="col s6">
-          <h5>Gun Safe</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          <h5>Closet</h5><div class="switch"><label>Off<input type="checkbox"><span class="lever"></span>On</label></div>
-          </div>
-          </center>
-          </div>
       </div>
-    </div>
-    </div>
-
-  <!-- Modal for ID -->
-  <div id="modal2" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 38px; max-height: 518px; overflow-y: hidden">
-    <div class="modal-content yellow lighten-5" style="border-radius: 10px; height: 514px">
       <div class="row">
-        <div class="col s12">
-        <h5 style="margin-top: 20px; font-weight: 200"><center style="margin-bottom: -13px;"><i class="fa fa-thermometer-empty animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>Home Temperature</center></h5>
+        <div class="col s12" style="margin-top: -20px">
+        <center>
+            <h5 class="bp-title" style="margin-right:251px; font-weight: 200">Flight #</h5>
+            <h5 class="bp-deets" style="margin-right:238px">{{boardingInfo.flight}}</h5>
+            <span>
+              <h5 class="bp-title" style="margin-left:220px; font-weight: 200; margin-top: -70px">Passenger</h5>
+              <h5 class="bp-deets" style="margin-top: 8px; margin-left: 182px">{{boardingInfo.passenger}}</h5>
+            </span>
+         </center>
         </div>
       </div>
       <center>
-      <h4 class="animated fadeIn" id="thumbprint" src="images/portrait.png">Alter your temperature:
-      </h4>
-        <div class="input-field col s12" style="margin-top: 30px">
-          <select>
-            <option value="" disabled selected>Choose your option</option>
-            <option value="1">60</option>
-            <option value="2">62</option>
-            <option value="3">64</option>
-            <option value="4">66</option>
-            <option value="5">68</option>
-            <option value="6">70</option>
-            <option value="7">72</option>
-            <option value="8">74</option>
-            <option value="9">76</option>
-            <option value="10">78</option>
-            <option value="11">80</option>
-          </select>
-          <label>Temperature</label>
+         <div class="row">
+          <div class="col s12" style="margin-top: -20px">
+            <h5 class="bp-title" style="margin-right: 214px; font-weight: 200">Destination</h5>
+            <h5 class="bp-deets" style="margin-left: -166px">{{boardingInfo.destination}}</h5>
+          </div>
+          <div class="col s12">
+            <h5 class="bp-title" style="font-weight: 200; margin-left: 275px; margin-top:-70px">Gate</h5>
+            <h5 class="bp-deets" style="margin-left: 282px; margin-top: 4px">{{boardingInfo.gate}}</h5>
+          </div>
         </div>
       </center>
-    </div>
+        <div class="col-sm-4">
+            <h5 class="bp-title" style="font-weight: 200; margin-left: 8px; margin-top: -13px">Departure</h5>
+            <h5 class="bp-deets" style="margin-left: 8px">{{boardingInfo.departure}}</h5>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <center>
+              <img src="images/barcode.png" style="width:150px">
+            </center>
+          </div>
+        </div> 
   </div>
+</div>
+
+  <!-- Modal for Thermostat Settings-->
+  <div id="modal2" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 38px; max-height: 518px; overflow-y: hidden">
+    <div class="modal-content blue-grey lighten-2" style="border-radius: 10px; height: 514px;">
+      <img class="animated slideInDown" src="images/weather1.png">
+      <!-- align-content: center; -->
+      <div class="container animated slideInLeft">
+             <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+                <div class="range">
+                  <input name="range" type="range" min="0" max="100000">
+                  <div class="range-output">
+                    <output class="output" name="output" for="range">
+                      50
+                    </output>
+                  </div>
+                </div>
+              </form>
+              </div>
+        <div class="row">
+          <div class="col s12">
+            <h5><center style="position: absolute;margin-top: -474px;margin-left: -43px;font-weight: 200;font size: 1;font-size: 30px;"><i class="fa fa-thermometer-three-quarters animated slideInLeft" aria-hidden="true" style="margin-top: -516px;margin-left: 77px;;"></i>  Thermostat Settings</center></h5>
+             <h3 style="margin-top: -120px;position: absolute;font-weight: 200;font-size: 41px;margin-left: 12px;">Adjust <br> thermostat below</h3>  
+          </div>
+        </div>
+       <i class="fa fa-sun-o fa-2x" aria-hidden="true" style="position: absolute;margin-left: 63px;margin-top: -432px;;"></i>      
+      </div>
+    </div>
+   
 
           
         <!--button row-->
   <div class = "container">
   <div class="row" id="button_row">
-    <a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_flight"><i class="fa fa-toggle-on" aria-hidden="true"></i></a>
+    <a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_flight"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
     <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_school" id="buttonslow"><i class="fa fa-lock" aria-hidden="true"></i></a></span>
-    <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_home" id="buttonslow2"><i class="fa fa-thermometer-empty" aria-hidden="true"></i></a></span>
+    <span id="space_button"><a class="btn-floating btn-large waves-effect waves-light grey darken-3 animated bounceInUp" href="#card_home" id="buttonslow2"><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i></a></span>
     </div>
       </div>
 
@@ -266,24 +255,24 @@
             <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
         </div>
      </div> -->
-
-
+<script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/home.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/navmap.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.js"></script>
   
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
  -->  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script> -->
 <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
  -->  <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
   
-  <!-- new nav script -->      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript" src="js/home.js"></script>
+  <!-- new nav script -->
   <script src="js/polyfills.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-      <script src="https://use.fontawesome.com/d14321a1f4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="https://use.fontawesome.com/d14321a1f4.js"></script>
+
+
 
 </body>
 </html>
