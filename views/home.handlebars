@@ -191,8 +191,9 @@
 
   <!-- Modal for Thermostat Settings-->
   <div id="modal2" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 38px; max-height: 518px; overflow-y: hidden">
-    <div class="modal-content" style="border-radius: 10px; height: 514px; background-color: #E5E5E5">
-      <img src="images/weather.png">
+    <div class="modal-content blue-grey lighten-2" style="border-radius: 10px; height: 514px;">
+      <img class="animated slideInDown" src="images/weather1.png">
+      <!-- align-content: center; -->
       <div class="container animated slideInLeft">
              <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
                 <div class="range">
@@ -205,15 +206,16 @@
                 </div>
               </form>
               </div>
-               <div class="row">
-        <div class="col s12">
-       <h5><center style="position: absolute;margin-top: -504px; margin-left: -26px"><i class="fa fa-thermometer-three-quarters animated slideInLeft" aria-hidden="true" style="margin-top: -516px;margin-left: 77px;;"></i>  Thermostat Settings</center></h5>
+        <div class="row">
+          <div class="col s12">
+            <h5><center style="position: absolute;margin-top: -474px;margin-left: -43px;font-weight: 200;font size: 1;font-size: 30px;"><i class="fa fa-thermometer-three-quarters animated slideInLeft" aria-hidden="true" style="margin-top: -516px;margin-left: 77px;;"></i>  Thermostat Settings</center></h5>
+             <h3 style="margin-top: -120px;position: absolute;font-weight: 200;font-size: 41px;margin-left: 12px;">Adjust <br> thermostat below</h3>  
+          </div>
         </div>
-      </div>
-               
+       <i class="fa fa-sun-o fa-2x" aria-hidden="true" style="position: absolute;margin-left: 63px;margin-top: -432px;;"></i>      
       </div>
     </div>
-  </div>  
+   
 
           
         <!--button row-->
