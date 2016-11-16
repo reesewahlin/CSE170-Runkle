@@ -123,67 +123,116 @@
 
 
 
-     <!-- Modal for location -->
+     <!-- Modal for switches -->
   <div id="modal0" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px">
     <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
       <div class="row">
         <div class="col s12">
-        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-compass animated slideInLeft" aria-hidden="true"></i> Your Location</center></h5>
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-compass animated slideInLeft" aria-hidden="true"></i> Light Settings</center></h5>
         </div>
       </div>
-      <div class="row">
-        <center>
-        <div id="map_canvas" style="width:90%; height:350px"></div>
-        </center>
-      </div>
+    
+
+
     </div>
   </div>
         
 
 
-     <!-- Modal for boarding pass -->
+     <!-- Modal for Locks -->
   <div id="modal1" class="modal animated slideInUp" style="border-radius: 14px;margin-bottom: 50px; max-height: 479px; overflow-y: hidden">
     <div class="modal-content cyan lighten-5" style="border-radius: 10px; height: 479px">
       <div class="row">
         <div class="col s12">
-        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-id-card-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  Boarding Pass</center></h5>
+        <h5 style="margin-top: 20px; font-weight: 200"><center><i class="fa fa-id-card-o animated slideInLeft" aria-hidden="true" style="margin-right: 5px;"></i>  Lock Settings</center></h5>
         </div>
       </div>
-      <div class="row">
-        <div class="col s12" style="margin-top: -20px">
-        <center>
-            <h5 class="bp-title" style="margin-right:251px; font-weight: 200">Flight #</h5>
-            <h5 class="bp-deets" style="margin-right:238px">{{boardingInfo.flight}}</h5>
-            <span>
-              <h5 class="bp-title" style="margin-left:220px; font-weight: 200; margin-top: -70px">Passenger</h5>
-              <h5 class="bp-deets" style="margin-top: 8px; margin-left: 182px">{{boardingInfo.passenger}}</h5>
-            </span>
-         </center>
+      <div class="container">
+        <div class="row" style="margin-top: -14px;">
+          <center>
+            <h5 class="col s6" style="font-weight: 300">Outside Doors</h5>
+            <h5 class="col s6" style="font-weight: 300">Inside Doors</h5>
+          </center>
         </div>
-      </div>
-      <center>
-         <div class="row">
-          <div class="col s12" style="margin-top: -20px">
-            <h5 class="bp-title" style="margin-right: 214px; font-weight: 200">Destination</h5>
-            <h5 class="bp-deets" style="margin-left: -166px">{{boardingInfo.destination}}</h5>
-          </div>
-          <div class="col s12">
-            <h5 class="bp-title" style="font-weight: 200; margin-left: 275px; margin-top:-70px">Gate</h5>
-            <h5 class="bp-deets" style="margin-left: 282px; margin-top: 4px">{{boardingInfo.gate}}</h5>
-          </div>
-        </div>
-      </center>
-        <div class="col-sm-4">
-            <h5 class="bp-title" style="font-weight: 200; margin-left: 8px; margin-top: -13px">Departure</h5>
-            <h5 class="bp-deets" style="margin-left: 8px">{{boardingInfo.departure}}</h5>
-        </div>
+        <hr> 
+        <!-- outside locks-->  
         <div class="row">
-          <div class="col s12">
+          <div class="col s6">
             <center>
-              <img src="images/barcode.png" style="width:150px">
+            <h6>Front</h6>
+            <!-- Switch -->
+            <div class="switch">
+              <label>
+                unlock
+                <input type="checkbox">
+                <span class="lever"></span>
+                lock
+              </label>
+            </div>
+            <br>
+            <h6>Garage</h6>
+            <!-- Switch -->
+            <div class="switch">
+              <label>
+                unlock
+                <input type="checkbox">
+                <span class="lever"></span>
+                lock
+              </label>
+            </div>
+            <br>
+            <h6>Deck</h6>
+            <!-- Switch -->
+            <div class="switch">
+              <label>
+                unlock
+                <input type="checkbox">
+                <span class="lever"></span>
+                lock
+              </label>
+            </div>
+        </div>
+            <!-- inside locks-->
+            <div class="col s6">
+              <center>
+              <h6>Gun Safe</h6>
+              <!-- Switch -->
+              <div class="switch">
+                <label>
+                  unlock
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  lock
+                </label>
+              </div>
+              <br>
+              <h6>Bedroom</h6>
+              <!-- Switch -->
+              <div class="switch">
+                <label>
+                  unlock
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  lock
+                </label>
+              </div>
+              <br>
+              <h6>Closet</h6>
+              <!-- Switch -->
+              <div class="switch">
+                <label>
+                  unlock
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  lock
+                </label>
+              </div>
+              <br>
             </center>
-          </div>
-        </div> 
+          </div> 
+      </div>
+      <hr>
+    </div>
   </div>
 </div>
 
@@ -192,7 +241,7 @@
     <div class="modal-content blue-grey lighten-2" style="border-radius: 10px; height: 514px;">
       <img class="animated slideInDown" src="images/weather1.png">
       <!-- align-content: center; -->
-      <div class="container animated slideInLeft">
+      <div class="container">
              <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
                 <div class="range">
                   <input name="range" type="range" min="0" max="100000">
