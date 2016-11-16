@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html ng-app="runkle">
 <head>
   <meta charset="UTF-8">
   
@@ -24,11 +24,14 @@
       <link rel="stylesheet" type="text/css" href="css/animate.css">
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
        <link rel="stylesheet" href="css/login.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+  		<script src="js/login.js"></script>
+
 
 
 </head>
 
-<body>
+<body ng-controller="mainController">
 
 <!--header-->
 <div class="navbar-fixed">
@@ -43,64 +46,55 @@
 
     <div class="container valign-wrapper" id="newContainer">
  
-<div class ="animated fadeInDown" id="vert_align">
- <div class="row">
+<div class ="animated fadeInDown" id="vert_align" style="margin-left: 50px">
+ 	<div class="row">
         <div class="col s12">
           <h3 class="black-text center-align" style="font-weight: 200">Login below</h3>
         </div>
-        </div>
-   <div class="row">
-   <form action="/login" method="post" class="col s12" onsubmit="return validateForm()">
-      <div class="col s12 m5 card-panel grey darken-3">
-       <div class="input-field col s6">
-          <input id="first_name" name="first_name" type="text" class="validate white-text">
-          <label for="first_name" class="white-text" id="first_input" style="font-weight: 200">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" name="last_name" type="text" class="validate white-text">
-          <label for="last_name" class="white-text" id="last_input" style="font-weight: 200">Last Name</label>
-        </div>
+	</div>
 
-        <div class="row">
-        <div class="input-field col s12">
-          <input id="email" name="email" type="email" class="validate white-text">
-          <label for="email" class="white-text" id="email_input" style="font-weight: 200">Email</label>
-        </div>
-        </div>
+   	<div class="row">
+	   	<form>
+	      	<div class="col s12 m5 card-panel grey darken-3">
+			    <div class="row">
+			        <div class="input-field col s12">
+			          	<label for="email" class="white-text" id="email_input" style="font-weight: 200">Email</label>
+			          	<input id="email" name="email" type="email" class="validate white-text form-control" ng-model="login.email">
+			        </div>
+			    </div>
 
-        <div class="row">
-        <div class="input-field col s12">
-          <input id="password" name="password" type="password" class="validate white-text">
-          <label for="password" class="white-text" id="password_input" style="font-weight: 200">Password</label>
-        </div>
-      </div>
+			    <div class="row">
+			        <div class="input-field col s12">
+			          	<label for="password" class="white-text" id="password_input" style="font-weight: 200">Password</label>
+			          	<input type="password" name="password" class="form-control" id="password" ng-model="login.password">
+			        </div>
+		      	</div>
 
-       <div class="row center-align">
-          <!-- <input type="submit"> -->
-<!--           <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" type="submit" formaction="/homepage" formmethod="get" name="action" style="font-weight: 200">Submit
- --> 
-            <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" style="font-weight: 200">Submit
+		       	<div class="row center-align">
+		            <button class="btn waves-effect waves-light cyan darken-2" id="button_submit" style="font-weight: 200" ng-click="onSubmit()">Login!<i class="material-icons right">send</i>
+		          	</button>
+		     	</div>
 
-            <i class="material-icons right">send</i>
-          </button>
-
-<!--           <button id="button_submit" >submit</button>
- -->      </div>
-
-      </div>
-      </form>
+	      	</div>
+	    </form>
     </div>
+
+
+    <div>
+    	<p>Need an account? <a href="/register">Register!</a>  </p>
     </div>
+    	
+</div>
+
+
     </div>
     </div>
 
   
 
 
-
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="/js/bootstrap.min.js"></script>
-  <script src="js/login.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   
 
