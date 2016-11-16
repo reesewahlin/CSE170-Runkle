@@ -19,10 +19,24 @@ var $;
 var jsdom = require("jsdom").jsdom;
 var doc = jsdom();
 var window = doc.defaultView;
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://mongodb://test:test@ds149207.mlab.com:49207/runkle');
+//mongoose.connect('mongodb://localhost/runkle');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log("Successfully connected to mongoose database.");
+});
 var form = require('express-form');
 var field = form.field;
+var jwt = require('express-jwt');
+var auth = jwt({
+	secret: 'MY_SECRET',
+	userProperty: 'payload'
+});
 
 // Load jQuery with the simulated jsdom window.
 $ = require('jquery')(window);
@@ -30,6 +44,7 @@ $ = require('jquery')(window);
 
 // variables for Controller files
 var index = require('./routes/index');
+var register = require('./routes/register');
 var airport = require('./routes/airport');
 var school = require('./routes/school');
 var home = require('./routes/home');
@@ -39,9 +54,11 @@ var homepage = require('./routes/homepage');
 var newairport = require('./routes/newairport');
 var User = require('./models/user.js');
 var newschool = require('./routes/newschool');
-//var php = require('./routes/php');
+var ctrlAuth = require('./user_accounts/controllers/authentication');
 
-
+//login tutorialspoint browser jwt node.js angular MEAN stack
+require('./models/db');
+require('./user_accounts/config/passport');
 
 
 // Example route
@@ -49,9 +66,8 @@ var newschool = require('./routes/newschool');
 var app = express();
 
 
-
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3100);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
@@ -65,6 +81,8 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.bodyParser());
+app.use(passport.initialize());
+//app.use('/api', routesApi);
 
 // development only
 if ('development' == app.get('env')) {
@@ -73,69 +91,23 @@ if ('development' == app.get('env')) {
 
 
 // Add routes here
-app.get('/', login.view);
-// app.get('/login', login.view);
+app.get('/', register.view);
 app.get('/homepage',homepage.view);
 app.get('/airport', airport.view);
 app.get('/school', school.view);
 app.get('/home', home.view);
 app.get('/about', about.view);
 app.get('/newairport', newairport.view);
-app.post('/login',
-	  // Form filter and validation middleware 
-	  form(
-	  	field("first_name").trim().required(),
-	    field("last_name").trim().required(),
-	    field("email").trim().isEmail(),
-	    field("password").trim().required()
-	   ),
-	 
-	   // Express request-handler now receives filtered and validated data 
-	   function(req, res){
-	     	if (!req.form.isValid) {
-	       		// Handle errors 
-	       		console.log(req.form.errors);
-	     	} else {
-		       	// Or, use filtered form data from the form object: 
-
-		       	// create a new user
-				var newUser = new User({
-				  	first_name: 	req.form.first_name,
-				  	last_name: 	req.form.last_name,
-				  	email: 		req.form.email,
-				  	password: 	req.form.password		
-				});
-
-				console.log("Adding user: ");
-		        console.log("first_name:", req.form.first_name);
-		        console.log("last_name:", req.form.last_name);
-		        console.log("Email:", req.form.email);
-		        console.log("Password:", req.form.password);
-
-		        // save the user
-				newUser.save(function(err) {
-				  	//if (err) throw err;
-				  	console.log('User created!');
-				});
-
-				/** CHANGE THIS FOR LOCATION DISTANCE **/
-				res.render('index');
-				// // get all the users
-				// User.find({first_name: req.form.first_name}, function(err, users) {
-				// 	if (err) throw err;
-				// 	// object of all the users
-				// 	console.log(users);
-				// 	res.render('index', users);
-				// });
-
-		}
-	
-	}
-);
-
-
 app.get('/newschool', newschool.view);
-//app.get('/json_save.php', php.execute);
+app.get('/register', register.view);
+app.get('/currentuser', homepage.getUser);
+
+app.post('/register', register.register);
+app.post('/login', ctrlAuth.login);
+
+
+
+
 
 // Example route
 // app.get('/users', user.list);
@@ -147,7 +119,12 @@ http.createServer(app).listen(app.get('port'), function(){
 
 
 
+/**
 
+CURRENTLY WORKING ON: 
+	getting user data from mongodb to display on homepage.handlebars from homepage.view route in homepage.js
+
+	**/
 
 
 
