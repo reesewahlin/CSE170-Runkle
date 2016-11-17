@@ -101,6 +101,7 @@ app.get('/newairport', newairport.view);
 app.get('/newschool', newschool.view);
 app.get('/register', register.view);
 app.get('/currentuser', homepage.getUser);
+app.get('/oldairport', newairport.view1);
 
 app.post('/register', register.register);
 app.post('/login', ctrlAuth.login);
