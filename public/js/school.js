@@ -15,6 +15,9 @@ var options = {
 //first function called when page renders
 function initialize() {
   navigator.geolocation.getCurrentPosition(success, error, options);
+  console.log("rendering modal");
+  //alert("Good morning, here's your schedule for today.d");
+  //$('#modal1').modal('open');
 };
 
 

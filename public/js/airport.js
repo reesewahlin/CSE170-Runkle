@@ -16,7 +16,14 @@ var options = {
 //first function called when page renders
 function initialize() {
 	navigator.geolocation.getCurrentPosition(success, error, options);
+	setTimeout(renderBoardingPassAfterTime, 5000)
 };
+
+function renderBoardingPassAfterTime() {
+		//$("#modal0").modal("open");
+
+	$("#modal1").modal("open");
+}
 
 
 //when navigator.Geolocation works, this is called
