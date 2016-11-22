@@ -92,7 +92,7 @@ if ('development' == app.get('env')) {
 
 
 // Add routes here
-app.get('/', register.view);
+app.get('/', testpage.view);
 app.get('/homepage',homepage.view);
 app.get('/airport', airport.view);
 app.get('/school', school.view);
