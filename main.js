@@ -55,6 +55,7 @@ var newairport = require('./routes/newairport');
 var User = require('./models/user.js');
 var newschool = require('./routes/newschool');
 var ctrlAuth = require('./user_accounts/controllers/authentication');
+var testpage = require('./routes/testpage');
 
 //login tutorialspoint browser jwt node.js angular MEAN stack
 require('./models/db');
@@ -102,6 +103,7 @@ app.get('/newschool', newschool.view);
 app.get('/register', register.view);
 app.get('/currentuser', homepage.getUser);
 app.get('/oldairport', newairport.view1);
+app.get('/testpage',testpage.view);
 
 app.post('/register', register.register);
 app.post('/login', ctrlAuth.login);

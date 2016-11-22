@@ -36,7 +36,8 @@ function initializePage() {
   $('#modal2').modal();
   $('#card_school').scrollSpy({scrollOffset : 100});
   $('#card_home').scrollSpy({scrollOffset : 100});
-  
+  ga('set', '&linkid', 'splashpage');
+ 
   }
 
 
