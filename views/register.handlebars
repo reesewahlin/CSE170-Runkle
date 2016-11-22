@@ -26,8 +26,9 @@
        <link rel="stylesheet" href="css/login.css">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhc8g7GgjXig6yXX4jqGOahy9zNHDPjG4&libraries=geometry,places"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
 
-  		<script src="js/login.js"></script>
+  		
 
 
 
@@ -39,12 +40,12 @@
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper cyan darken-2">
-      <a class="brand-logo center animated fadeIn" style="font-weight: 200;"><i class="material-icons animated slideInLeft">navigation</i>Info Hub</a>
+      <a class="brand-logo center animated fadeIn" style="font-weight: 200; font-family: pacifico"><i class="material-icons animated slideInLeft">navigation</i>Info Hub</a>
     </div>
   </nav>
   </div>
 
-  <div class="outer_Bounds ">
+  <div class="outer_Bounds" style="background-color:rgba(96, 125, 139,.3)">
 
     <div class="container valign-wrapper" id="newContainer">
  
@@ -60,7 +61,7 @@
    	<form>
       	<div class="col s12 m5 card-panel grey darken-3">
        		<div class="input-field col s6">
-	          	<label for="first_name" class="white-text" id="first_input" style="font-weight: 200">First Name</label>
+	          	<label for="first_name" class="white-text" id="first_input" style="font-weight: 200;">First Name</label>
 	          	<input id="first_name" name="first_name" type="text" class="validate white-text form-control" ng-model="credentials.first_name">
         	</div>
 	        <div class="input-field col s6">
@@ -114,6 +115,7 @@
   ga('send', 'pageview');
 
 </script>
+<script src="js/login.js"></script>
 
 </body>
 </html>
