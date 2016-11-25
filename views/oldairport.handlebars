@@ -22,7 +22,16 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 <!-- End of Google Analytics Content Experiment code -->
 
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-87462587-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 
 
@@ -79,7 +88,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <ul>
       <li><a href="/homepage" class="btn-floating cyan lighten-3"><i class="fa fa-home" aria-hidden="true"></i></a></li>
       <li><a href="/newschool" class="btn-floating cyan darken-2"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
-      <li><a href="/home" class="btn-floating cyan darken-4" onclick="__gaTracker('send', 'event', 'buttons', 'click', 'smarthome-old');"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
+      <li><a href="/home" class="btn-floating cyan darken-4" onclick="ga('send', 'event', 'oldairport-smarthome-click', 'click');"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
     </ul>
   </div>
   
@@ -326,16 +335,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <script src="https://use.fontawesome.com/d14321a1f4.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-87462587-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
