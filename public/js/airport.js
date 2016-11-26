@@ -148,8 +148,11 @@ function showID() {
 
 }
 
-
-$('.homebutton').click(handleOutboundLinkCLick);
+/*
+	Handle Google Analytics recording of smarthome clicks,
+		both from new and old airport (because same class name homebutton)
+*/
+//$('.homebutton').click(handleOutboundLinkCLick);
 
 function handleOutboundLinkClick(event) {
 	ga('send', 'event', {
