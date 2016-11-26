@@ -109,7 +109,41 @@
 			"address": "1 Infinite Loop, Cupertino CA",
 			"height": "6'2",
 			"age": "22"
-		}
+		},
 
+	"schedule": 
+		{
+			"item1":
+				{
+					"time": "10:00 AM",
+					"title": "PHIL 175",
+					"location": "HSS 1128A",
+					"description": "Philosophy 175 - Aesthetics: Lecture"
+				},
+
+			"item2":
+				{
+					"time": "12:30 PM",
+					"title": "COGS 120",
+					"location": "CICC 101",
+					"description": "COGS 120 - Intro to HCI"
+				},
+
+			"item3":
+				{
+					"time": "2:00 PM",
+					"title": "CSE 105",
+					"location": "CENTR 101",
+					"description": "CSE 105 - Theory of Computability: Lecture"
+				},
+
+			"item4":
+				{
+					"time": "6:30 PM",
+					"title": "Dinner",
+					"location": "Ki Sushi, 8650 Genesee Ave, San Diego, CA 92122",
+					"description": "Sushi with Mom and Dad"
+				}
+		}
 }
 
