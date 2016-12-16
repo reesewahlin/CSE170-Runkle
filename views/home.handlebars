@@ -328,16 +328,9 @@
       <img class="animated slideInDown" src="images/weather1.png">
       <!-- align-content: center; -->
       <div class="container">
-             <form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
-                <div class="range">
-                  <input name="range" type="range" min="0" max="100000">
-                  <div class="range-output">
-                    <output class="output" name="output" for="range">
-                      50
-                    </output>
-                  </div>
-                </div>
-              </form>
+              <div id='thermostat'></div>
+
+  <div id='controls'>
               </div>
         <div class="row">
           <div class="col s12">
