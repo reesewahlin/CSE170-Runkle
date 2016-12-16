@@ -19,12 +19,12 @@ function initialize() {
 	setTimeout(renderBoardingPassAfterTime, 5000)
 };
 
-/**function renderBoardingPassAfterTime() {
+function renderBoardingPassAfterTime() {
 		//$("#modal0").modal("open");
 
 	$("#modal1").modal("open");
 }
-*/
+
 
 
 //when navigator.Geolocation works, this is called
